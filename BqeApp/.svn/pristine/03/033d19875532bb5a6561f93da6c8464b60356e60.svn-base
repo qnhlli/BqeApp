@@ -1,0 +1,106 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AttendanceQueryModel"
+    },
+    "name": "MyModel",
+    "designerId": "61b742af-0909-4526-b417-8326cecf4cfb",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "longitude"
+            },
+            "name": "field14",
+            "designerId": "c151f647-ffcf-454e-8840-5c8d37c32d02"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "latitude"
+            },
+            "name": "field15",
+            "designerId": "cfbbdef1-c93c-4df6-a3e2-1ff6a12bcca4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "accuracy"
+            },
+            "name": "field16",
+            "designerId": "1233df8b-b95d-425a-9aa3-d62af6128a41"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gpsTimestamp"
+            },
+            "name": "field17",
+            "designerId": "e9e6c346-f92e-40d3-908c-2f413da853d6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address"
+            },
+            "name": "field18",
+            "designerId": "c3409b14-8958-4997-b2fa-90947606747f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "attendType"
+            },
+            "name": "field19",
+            "designerId": "49154e3e-9102-4ba3-b6c3-0e80edb13ff1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "attendTime"
+            },
+            "name": "field20",
+            "designerId": "38da6590-643f-424b-8cfc-39214e625365"
+        }
+    ]
+}

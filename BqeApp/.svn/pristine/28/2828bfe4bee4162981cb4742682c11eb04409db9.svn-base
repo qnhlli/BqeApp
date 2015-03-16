@@ -1,0 +1,107 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "photographupload",
+        "designer|userClassName": "resourceManager.PhotographUpload",
+        "id": "photographUpload"
+    },
+    "name": "MyFormPanel",
+    "designerId": "e9dc74b4-60a7-462e-82fc-f99972d939e5",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadDate",
+                "label": "日期:",
+                "name": "photographUploadDate"
+            },
+            "name": "MyTextField2",
+            "designerId": "20f1d84a-714f-4ab1-b1b6-5c1b6e028c00"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadPerson",
+                "label": "上传者:",
+                "name": "photographUploadPerson"
+            },
+            "name": "MyTextField3",
+            "designerId": "5869ac26-5f17-40b0-8752-4ce353407e6a"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadCustomer",
+                "label": "客户:",
+                "name": "photographUploadCustomer"
+            },
+            "name": "MyTextField9",
+            "designerId": "727ef2bf-915f-47e5-9ac2-8e1db5e1e490"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadLocation",
+                "label": "位置:",
+                "name": "photographUploadLocation"
+            },
+            "name": "MyTextField10",
+            "designerId": "1b812dec-040b-4b0a-9bb1-d985bb740968"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadPhoto",
+                "label": "拍照:",
+                "name": "photographUploadPhoto"
+            },
+            "name": "MyTextField11",
+            "designerId": "87077cf4-7e54-46fa-9723-f921167da820"
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUploadContent",
+                "label": "描述:",
+                "name": "photographUploadContent"
+            },
+            "name": "MyTextArea3",
+            "designerId": "7ba6c99d-726c-4f4d-b0c7-a2623b0f4f1d"
+        }
+    ]
+}

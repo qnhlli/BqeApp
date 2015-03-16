@@ -1,0 +1,39 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "",
+            "{",
+            "        id: '',",
+            "        xtype: '',",
+            "        title:'拍照设置',",
+            "        moreIcon:true",
+            "},",
+            "    {   ",
+            "        id: '',",
+            "        xtype: '',",
+            "        title:'工作日志',",
+            "        moreIcon:true",
+            "    },",
+            "    {  ",
+            "        id: '',",
+            "        xtype: '',",
+            "        title:'清除数据',",
+            "        moreIcon:true",
+            "    }",
+            "]",
+            ""
+        ],
+        "designer|userClassName": "functionListStore.SystemSettingsStore",
+        "model": "FunctionListModel",
+        "storeId": "functionListStore.SystemSettingsStore"
+    },
+    "name": "MyStore",
+    "designerId": "3351db1e-609c-4f0e-a725-57f3672b603e"
+}

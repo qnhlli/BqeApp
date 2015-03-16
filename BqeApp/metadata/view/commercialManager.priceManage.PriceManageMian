@@ -1,0 +1,42 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pricemanagemian",
+        "designer|userClassName": "commercialManager.priceManage.PriceManageMian",
+        "disableSelection": true,
+        "height": "100%",
+        "id": "priceManageMian",
+        "store": "priceManageStore"
+    },
+    "name": "MyList",
+    "designerId": "a6d9e5b0-47e0-4b03-b1f1-7357f8e95086",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img  src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "b160510b-fa59-44f1-a341-cc868ba8022c"
+        }
+    ]
+}

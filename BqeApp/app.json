@@ -1,0 +1,98 @@
+{
+   "builds": {
+      "web": {
+         "default": true
+      },
+      "native": {
+         "packager": "phonegap",
+         "phonegap": {
+            "config": {
+               "platform": "android",
+               "platform": "ios",
+               "id": "com.pushsoft.myapp",
+               "name": "BqeApp"
+            }
+         }
+      }
+   },
+   "name": "BqeApp",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-3d6c74c2-f28b-40b0-a72b-227979c28cf9.css"
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/bqe_main.css"
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/color.css"
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/view.css"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/img",
+      "resources/sass",
+      "resources/css"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "a55b65c8-cf9c-4282-9438-4b1c24fab568"
+}

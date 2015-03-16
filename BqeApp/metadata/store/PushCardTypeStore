@@ -1,0 +1,68 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        xtype:'pushcarddetail',",
+            "        title:'签到',",
+            "        state:0",
+            "    },{",
+            "        xtype:'pushcarddetail',",
+            "        title:'签退',",
+            "        state:0",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "PushCardTypeStore",
+        "storeId": "PushCardTypeStore"
+    },
+    "name": "MyStore",
+    "designerId": "024b174b-448d-45a6-ae60-4acbd54880a1",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "xtype"
+            },
+            "name": "field3",
+            "designerId": "b9d61da0-eff5-446d-aa45-111491fb752b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "name": "field2",
+            "designerId": "47da0f31-7914-463e-a81f-f8c637664b15"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "state"
+            },
+            "name": "field10",
+            "designerId": "2c7d0e9f-c5a6-4ddb-bb99-c1bb3f83b137"
+        }
+    ]
+}

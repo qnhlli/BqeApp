@@ -1,0 +1,15 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "applyquery",
+        "designer|userClassName": "dailyOffice.applyManage.ApplyQuery",
+        "id": "applyQuery"
+    },
+    "name": "MyContainer3",
+    "designerId": "6ad9aeca-93c8-4de2-a673-9bb47007ffcb"
+}

@@ -1,0 +1,43 @@
+{
+    "type": "Ext.dataview.DataView",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fastoperationmain",
+        "designer|userClassName": "fastOperate.FastOperationMain",
+        "height": "100%",
+        "id": "fastOperationMain",
+        "inline": true,
+        "itemCls": "fastItemCls",
+        "store": "fastOperationStore"
+    },
+    "name": "MyDataView",
+    "configAlternates": {
+        "inline": "boolean"
+    },
+    "designerId": "b908e59c-d18e-4ef5-9889-c03d1db6b015",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img class=\"photo\" src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "2b1a0667-5b63-476e-bcfc-955e3eae9948"
+        }
+    ]
+}

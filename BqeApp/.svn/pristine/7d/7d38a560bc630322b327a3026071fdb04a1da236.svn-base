@@ -1,0 +1,45 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "commercialManage.CommercialManagerController"
+    },
+    "name": "MyController",
+    "designerId": "fd8795a8-d154-4aee-9f92-89a9cc025290",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "客户列表初始化",
+                    ""
+                ],
+                "designer|controlQuery": "customermanagelist",
+                "designer|targetType": "commercialManager.customer.CustomerManageList",
+                "fn": "onCustomerManageListInitialize",
+                "implHandler": [
+                    "var customerStore = Ext.getStore('CustomerContactJsonPStore');",
+                    "",
+                    "customerStore.load({",
+                    "    callback: function(records, operation, success) {",
+                    "//         console.log(records);",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "name": "onCustomerManageListInitialize",
+            "designerId": "95f3787b-435d-462e-9991-ac62de63dc99"
+        }
+    ]
+}

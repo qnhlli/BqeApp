@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        functionId: 'applicationUpload',",
+            "        xtype: 'commitapply',",
+            "        iconPath: 'resources/img/icon_application_upload.svg',",
+            "        title: '提交申请',",
+            "        moreIcon: false",
+            "    },",
+            "    {",
+            "        functionId: 'applicationQuery',",
+            "        xtype: '',",
+            "        iconPath: 'resources/img/icon_application_query.svg',",
+            "        title: '申请查询',",
+            "        moreIcon: false",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "functionListStore.ApplyManageStore",
+        "model": "FunctionListModel",
+        "storeId": "applyManageStore"
+    },
+    "name": "MyStore1",
+    "designerId": "41830496-c886-4e9a-813d-de4b99d8100d"
+}

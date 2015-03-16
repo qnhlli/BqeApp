@@ -1,0 +1,42 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "applymanagemain",
+        "designer|userClassName": "dailyOffice.applyManage.ApplyManageMain",
+        "disableSelection": true,
+        "height": "100%",
+        "id": "applyManageMain",
+        "store": "applyManageStore"
+    },
+    "name": "MyList",
+    "designerId": "6cfc37c1-9327-4fa3-89cb-31f96f12ebe1",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img  src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "c15c308d-6553-402c-84e7-6be4c6a6f403"
+        }
+    ]
+}

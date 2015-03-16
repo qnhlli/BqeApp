@@ -1,0 +1,148 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "fastOperate.FastOperationMainController"
+    },
+    "name": "MyController",
+    "designerId": "d24abd92-5106-4f2d-af62-839baa8a313b",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#fastOperationMain",
+                "designer|targetType": "fastOperate.FastOperationMain",
+                "fn": "onFastOperationMainInitialize",
+                "implHandler": [
+                    "var fastOperationStore = Ext.getStore('fastOperationStore');",
+                    "fastOperationStore.load();",
+                    "",
+                    "//如果没有“添加按钮”,则向Store添加“添加按钮”",
+                    "if(!fastOperationStore.findRecord('functionId','addFunction')){",
+                    "    fastOperationStore.add({",
+                    "        functionId: 'addFunction',",
+                    "        xtype: 'fastoperationsetting',",
+                    "        iconPath: 'resources/img/icon_addition.svg',",
+                    "        title: '添加功能',",
+                    "        moreIcon:false",
+                    "    });",
+                    "    fastOperationStore.sync();",
+                    "}"
+                ],
+                "name": "initialize"
+            },
+            "name": "onFastOperationMainInitialize",
+            "designerId": "1acdfd53-e495-4dea-93b4-158d2e5da9fd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "设置快捷功能 界面初始化",
+                    ""
+                ],
+                "designer|controlQuery": "togglefield",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onTogglefieldInitialize",
+                "implHandler": [
+                    "var fastOperationStore = Ext.getStore('fastOperationStore');",
+                    "var record = fastOperationStore.findRecord('functionId',component.getItemId());",
+                    "",
+                    "if(record){",
+                    "   component.setValue(1);",
+                    "}"
+                ],
+                "name": "initialize"
+            },
+            "name": "onTogglefieldInitialize",
+            "designerId": "385e8a75-1ecb-4883-8d3d-407e5da7ff0a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onTogglefieldChange",
+                "implHandler": [
+                    "var fastOperationStore = Ext.getStore('fastOperationStore');",
+                    "",
+                    "if(newValue===1 && oldValue===0){",
+                    "    ",
+                    "    // 如果localStorage已有该记录",
+                    "    if(fastOperationStore.findRecord('functionId',togglefield.getItemId())){",
+                    "        return;",
+                    "    }",
+                    "    ",
+                    "    var storeId = null;",
+                    "    console.log('添加');",
+                    "    switch(togglefield.type){",
+                    "        case 'dailyOffice':",
+                    "            storeId = 'dailyOfficeStore';",
+                    "            break;",
+                    "        case 'commercialManager':",
+                    "            storeId = 'commercialManagementStore';",
+                    "            break;",
+                    "        case 'resourceManager':",
+                    "            storeId = 'resourcesManagementStore';",
+                    "            break;",
+                    "        case 'applyManage':",
+                    "            storeId = 'applyManageStore';",
+                    "            break;",
+                    "        case 'attendanceManage':",
+                    "            storeId = 'attendanceManageStore';",
+                    "            break;",
+                    "        case 'priceManage':",
+                    "            storeId = 'priceManageStore';",
+                    "            break;",
+                    "        default:",
+                    "            alert('类型错误');",
+                    "            console.log('类型错误');",
+                    "            break;",
+                    "    }",
+                    "",
+                    "    var fromStore = Ext.getStore(storeId);",
+                    "    var record = fromStore.findRecord('functionId',togglefield.getItemId());",
+                    "",
+                    "    if(!record){",
+                    "        alert('不存在');",
+                    "        console.log('不存在');",
+                    "        return;",
+                    "    }",
+                    "    ",
+                    "    record.phantom = true; //表示record是新增的",
+                    "    fastOperationStore.add(record);",
+                    "}",
+                    "",
+                    "if(newValue===0 && oldValue===1){",
+                    "    console.log('删除');",
+                    "    fastOperationStore.remove(fastOperationStore.findRecord('functionId',togglefield.getItemId()));",
+                    "}",
+                    "",
+                    "fastOperationStore.sync();"
+                ],
+                "name": "change"
+            },
+            "name": "onTogglefieldChange",
+            "designerId": "9ed43c9c-8766-4285-a985-7ff25c4ad1f8"
+        }
+    ]
+}

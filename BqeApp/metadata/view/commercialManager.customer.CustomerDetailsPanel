@@ -1,0 +1,351 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "customerdetailspanel",
+        "designer|userClassName": "commercialManager.customer.CustomerDetailsPanel",
+        "id": "customerDetailsPanel",
+        "scrollable": "vertical"
+    },
+    "designerId": "3d1978ec-e94d-4329-8960-b1f0bf9ce2ca",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "customerInfoContainer",
+                "id": null,
+                "itemId": "customerInfoContainer",
+                "layout": "hbox"
+            },
+            "name": "MyContainer",
+            "designerId": "5db76776-5e73-41b8-8348-db4c9d80bcc0",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": null,
+                        "height": 80,
+                        "id": null,
+                        "itemId": "customerPhoto",
+                        "margin": 10,
+                        "src": "resources/img/icon_customer_namage.svg",
+                        "width": 80
+                    },
+                    "name": "MyImg7",
+                    "designerId": "abe24232-6ea8-4c15-b2e0-813adb321d1b"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": true,
+                        "designer|displayName": null,
+                        "docked": null,
+                        "html": "账号名称",
+                        "id": null,
+                        "itemId": "customerName"
+                    },
+                    "name": "MyLabel5",
+                    "designerId": "fe24c535-3152-4fd8-a8bf-6c06a0ddaaf2"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": null,
+                "id": null,
+                "itemId": null,
+                "title": "电话"
+            },
+            "name": "MyFieldSet",
+            "designerId": "ea9831ed-efcc-4c69-918e-030d8a39dc86",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerMobile",
+                        "label": "手机:",
+                        "name": "customerMobile"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "b6faa515-19f5-4561-b1ae-de965dc4ddbf"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerTelephone",
+                        "label": "座机:",
+                        "name": "customerTelephone"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "0507d177-5e43-43cc-a330-a2942c107e16"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "padding": "6 0 6 0"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "1ee0554e-fed3-4357-8ff5-b3e0f95dcd9e",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "plain",
+                                "iconCls": "icon_telephone",
+                                "itemId": "BtnCustomerDetailsPanelCall",
+                                "text": "呼叫",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton8",
+                            "designerId": "566a6313-943b-4130-a96a-d3caa24179d5"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": null
+                            },
+                            "name": "MySpacer2",
+                            "designerId": "281a3ffc-2f07-4c57-bf9f-865bb78a33e6"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "plain",
+                                "iconCls": "icon_message",
+                                "itemId": "BtnCustomerDetailsPanelMessage",
+                                "text": "信息",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton10",
+                            "designerId": "b412ca1d-2c19-4c6e-8703-6ce98a47cc73"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": null
+                            },
+                            "name": "MySpacer3",
+                            "designerId": "5691ef29-5c9c-468a-ba9e-0e7f0b895cf6"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|uiInterfaceName": "plain",
+                                "iconCls": "icon_edit",
+                                "itemId": "BtnCustomerDetailsPanelEdit",
+                                "text": "编辑",
+                                "ui": "plain"
+                            },
+                            "name": "MyButton11",
+                            "designerId": "9b92f260-3470-44d1-ad4f-499d6c67cee7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "地址"
+            },
+            "name": "MyFieldSet5",
+            "designerId": "50381dc8-5c4d-469e-8325-d9da7e2bb6fd",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerAddress",
+                        "label": "",
+                        "name": "customerAddress"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "6f5d0ddb-05df-411a-9991-ab0f09662e28"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "其他"
+            },
+            "name": "MyFieldSet7",
+            "designerId": "5d5b778b-d4d1-41cd-8086-4e9c92fa9e40",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": false,
+                        "id": null,
+                        "itemId": "customerMallAccount",
+                        "label": "商城账号:",
+                        "name": "customerMallAccount"
+                    },
+                    "name": "MyTextField20",
+                    "designerId": "e8c104bb-d318-4bb6-9233-df16bedd6b13"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerQQ",
+                        "label": "QQ:",
+                        "name": "customerQQ"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "c55b1c02-c094-4618-8afa-3a06b0baf41c"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerWX",
+                        "label": "微信:",
+                        "name": "customerWX"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "6e357352-7ebe-4ca7-9a59-0ad7d93dd5c0"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "id": null,
+                        "itemId": "customerEmail",
+                        "label": "邮箱:",
+                        "name": "customerEmail"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "fcb9b8e9-dea5-4083-bb5c-30d750fcdbae"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": null,
+                "iconCls": "add",
+                "itemId": "BtnAddMore",
+                "margin": "10 80 80 80",
+                "text": "添加更多",
+                "width": 150
+            },
+            "name": "MyButton12",
+            "designerId": "3f2bc9ab-45c1-4716-b143-573f596ee0b2"
+        }
+    ]
+}

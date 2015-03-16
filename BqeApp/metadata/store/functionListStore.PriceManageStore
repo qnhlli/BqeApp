@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        functionId: 'quotedPriceApply',",
+            "        xtype: '',",
+            "        iconPath: 'resources/img/icon_quoted_price_apply.svg',",
+            "        title: '报价申请',",
+            "        moreIcon: false",
+            "    },",
+            "    {",
+            "        functionId: 'quotedPriceQuery',",
+            "        xtype: '',",
+            "        iconPath: 'resources/img/icon_quoted_price_query.svg',",
+            "        title: '报价查询',",
+            "        moreIcon: false",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "functionListStore.PriceManageStore",
+        "model": "FunctionListModel",
+        "storeId": "priceManageStore"
+    },
+    "name": "MyStore2",
+    "designerId": "29d9948c-b763-41e8-a421-27cd6d00d002"
+}

@@ -1,0 +1,49 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "customermanagelist",
+        "designer|userClassName": "commercialManager.customer.CustomerManageList",
+        "grouped": true,
+        "height": "100%",
+        "id": "customerManageList",
+        "store": "CustomerContactJsonPStore"
+    },
+    "name": "MyList",
+    "designerId": "33988dd6-8946-42e0-90e9-3f19ac11bd4c",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{customer_name}--{customer_mobile}</div>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "b3be875f-e0ad-4cb3-a1ae-6338414a34fa"
+        },
+        {
+            "type": "Ext.dataview.IndexBar",
+            "reference": {
+                "name": "indexBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%"
+            },
+            "name": "MyIndexBar",
+            "designerId": "6dd954a8-a0ac-46b2-9089-b80242f2c840"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "attendanceQueryJsonPStore",
+        "model": "AttendanceQueryModel",
+        "storeId": "attendanceQueryJsonPStore"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "0c0f1e23-fac4-4136-8291-c3955b45d924",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://192.168.0.100/appserver/server.php/work/attendance/query"
+            },
+            "name": "MyJsonPProxy4",
+            "designerId": "d0b29b0b-899d-43e9-8497-f43e86cd1b7f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader4",
+                    "designerId": "2c3ae1d6-4b61-4695-9d1f-d51ef74a028a"
+                }
+            ]
+        }
+    ]
+}

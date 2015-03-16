@@ -1,0 +1,40 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "systemsettinglist",
+        "designer|userClassName": "main.SystemSettingList",
+        "disableSelection": true,
+        "id": "systemSettingList",
+        "store": "functionListStore.SystemSettingsStore"
+    },
+    "name": "MyList",
+    "designerId": "2bc1d5c3-1dcf-4a23-8c6d-13a56034ab84",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "d33b2f80-da6f-4436-b298-f8416f4f9a69"
+        }
+    ]
+}

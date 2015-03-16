@@ -1,0 +1,93 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WorkReportModel"
+    },
+    "name": "MyModel",
+    "designerId": "7d1f2612-b807-4936-b08a-27b3d684c4ca",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportTitle"
+            },
+            "name": "field8",
+            "designerId": "e72da924-12e1-4aec-aebb-a663efce37d1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportType"
+            },
+            "name": "field9",
+            "designerId": "69c337a0-5dfb-49d8-942a-642589aabb67"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportTime"
+            },
+            "name": "field10",
+            "designerId": "a64b6f6d-6c13-411a-a611-6796813ced82"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportNeedCheck"
+            },
+            "name": "field11",
+            "designerId": "ea95c463-662e-420d-bd22-5c34727e514b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportCheckPerson"
+            },
+            "name": "field12",
+            "designerId": "c6f75f07-3445-4148-abed-401d15a76cfe"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "workReportContent"
+            },
+            "name": "field13",
+            "designerId": "659382fb-e2cc-417f-a7a1-06d12fd2523c"
+        }
+    ]
+}

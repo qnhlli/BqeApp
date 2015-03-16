@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        functionId: 'attendantPushcard',",
+            "        xtype: '',",
+            "        iconPath: 'resources/img/icon_attendant_pushcard.svg',",
+            "        title: '考勤打卡',",
+            "        moreIcon: false,",
+            "    },",
+            "    {",
+            "        functionId: 'attendantQuery',",
+            "        xtype: 'attendancequeryview',",
+            "        iconPath: 'resources/img/icon_attendant_query.svg',",
+            "        title: '考勤查询',",
+            "        moreIcon: false,",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "functionListStore.AttendanceManageStore",
+        "model": "FunctionListModel",
+        "storeId": "attendanceManageStore"
+    },
+    "name": "MyStore",
+    "designerId": "f43904b8-b4c1-4c15-b0f8-8d0600078b4d"
+}

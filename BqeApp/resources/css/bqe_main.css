@@ -1,0 +1,361 @@
+/*普通字体*/
+.x-button-label, .x-badge, .x-hasbadge .x-badge {
+    font-weight: bolder;
+    text-shadow: none;
+}
+
+/*图片离顶部距离*/
+.x-tabbar.x-docked-bottom .x-tab {
+    padding-top: 0.5em;
+}
+
+/*文字离图片距离*/
+/*.x-tabbar.x-docked-bottom .x-tab .x-button-label, .x-tabbar.x-docked-bottom .x-tab .x-badge, .x-tabbar.x-docked-bottom .x-tab .x-hasbadge .x-badge, .x-hasbadge .x-tabbar.x-docked-bottom .x-tab .x-badge*/
+/*{*/
+/*line-height:20px;*/
+/*}*/
+
+/*底部导航未选中时图标*/
+.icon-fastoperation {
+    background: url("../img/fastoperation.svg") no-repeat;
+}
+
+.icon-dailyoffice {
+    background: url("../img/dailyoffice.svg") no-repeat;
+}
+
+.icon-commercialmanage {
+    background: url("../img/commercialmanager.svg") no-repeat;
+}
+
+.icon-resourcemanage {
+    background: url("../img/resourcemanage.svg") no-repeat;
+}
+
+/*底部导航选中时图标*/
+.x-tab-active .icon-fastoperation {
+    background: url("../img/fastoperation_press.svg") no-repeat;
+}
+
+.x-tab-active .icon-dailyoffice {
+    background: url("../img/dailyoffice_press.svg") no-repeat;
+}
+
+.x-tab-active .icon-commercialmanage {
+    background: url("../img/commercialmanager_press.svg") no-repeat;
+}
+
+.x-tab-active .icon-resourcemanage {
+    background: url("../img/resourcemanage_press.svg") no-repeat;
+}
+
+/*底部导航图标大小*/
+.icon-fastoperation .icon-dailyoffice .icon-commercialmanage .icon-resourcemanage {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+/*选中框*/
+.x-tabbar-dark.x-docked-bottom .x-tab-active {
+    background-color: inherit;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*考勤打卡*/
+.icon_attendant_pushcard {
+    width: 60px !important;
+    height: 60px !important;
+    background: url("../img/icon_attendant_pushcard.svg") no-repeat;
+    background-size:100% 100%;
+}
+
+/*考勤查询*/
+.icon_attendant_query {
+    width: 60px !important;
+    height: 60px !important;
+    background: url("../img/icon_attendant_query.svg") no-repeat;
+    background-size:100% 100%;
+}
+
+/*list样式*/
+ul.functionList {
+    display: block;
+    height: 48px;
+}
+
+ul.functionList li {
+    display: block;
+    float: left;
+    height: 48px;
+}
+
+/*List图标*/
+ul.functionList li img {
+    max-height: 48px;
+    max-width: 48px;
+}
+
+/*List文字*/
+ul.functionList li.title {
+    line-height: 48px;
+    padding-left: 10px;
+    color: #7a7877;
+}
+
+/*List更多图标*/
+ul.functionList li.icon_more {
+    float: right;
+    padding-top: 10px;
+}
+
+/*list滚动条*/
+#dailyOfficeMain .x-scroll-scroller, #commercialManageMain .x-scroll-scroller, #resourceManageMain .x-scroll-scroller,#systemSettingList .x-scroll-scroller,
+#attendanceManage .x-scroll-scroller,#applyManageMain .x-scroll-scroller,#priceManageMian .x-scroll-scroller{
+    background: #fff;
+    max-width: 96%;
+    min-width: 96%;
+    min-height: 0;
+    margin: 2%;
+    border: 1px solid #8b8888;
+}
+
+/*去调List的上边框*/
+.x-list-normal .x-list-item.x-list-item-tpl.x-list-item-first {
+    border-top: none;
+}
+
+/*去掉List的下边框*/
+.x-list-normal .x-list-item.x-list-item-tpl.x-list-footer-wrap {
+    border-bottom: none;
+}
+
+.x-tabbar.x-docked-bottom .x-tab .x-button-icon {
+    width: 1.35em;
+}
+
+/*
+* 快捷功能样式
+*/
+
+.fastItemCls {
+    padding: 10px 0px 10px 14px;
+    width: 50%;
+}
+
+
+/*侧滑图标*/
+.icon_about_us
+{
+    width: 32px !important;
+    height: 32px !important;
+    background: url("../img/icon_about_us.svg") no-repeat;
+    background-size: contain;
+}
+.icon_account_number
+{
+    width: 32px !important;
+    height: 32px !important;
+    background: url("../img/icon_account_number.svg") no-repeat;
+    background-size:100% 100%;
+}
+.icon_drop_out
+{
+    width: 32px !important;
+    height: 32px !important;
+    background: url("../img/icon_drop_out.svg") no-repeat;
+    background-size:100% 100%;
+}
+.icon_feedback
+{
+    width: 32px !important;
+    height: 32px !important;
+    background: url("../img/icon_feedback.svg") no-repeat;
+    background-size:100% 100%;
+}
+/*侧滑菜单样式*/
+.slidemaincls
+{
+    padding: 0px;
+}
+/*设置侧滑背景色*/
+.x-menu
+{
+    background-image:none;
+    background-color:#ebebef;
+    text-align: center;
+}
+/*侧滑头部样式*/
+.slidecls
+{
+    background:#4e7a9c ;
+    padding: 20px;
+}
+/*侧滑字体颜色样式*/
+.btnslide.x-button
+{
+    color: #4094d5;
+}
+
+
+/*快捷功能设置样式*/
+.fastOperateSettingCls img{
+    display: block;
+    float: left;
+    height: 48px;
+    max-height: 48px;
+    max-width: 48px;
+}
+
+.fastOperateSettingTitle{
+    line-height: 48px;
+    padding-left: 10px;
+    color: #7a7877;
+}
+
+
+
+/*导航栏返回按钮*/
+#ext-button-1
+{
+    background: #edeae8;
+    border: none;
+}
+#ext-button-1:after
+{
+    background: #edeae8;
+    left: -7px;
+}
+#ext-button-1:before{
+    left: -8px;
+}
+.x-webkit .x-button-back:before, .x-webkit .x-button-back:after{
+    top: 1px;
+    bottom: 1px;
+}
+
+
+/*导航按钮样式*/
+.x-toolbar-dark .x-button
+{
+    background-color: #dbdbdb;
+    background-image: none;
+    /*margin: 0px;*/
+    border:none;
+}
+.x-toolbar-dark .x-button.x-button-pressing
+{
+    background-color: #c9c9c9;
+    background-image: none;
+}
+
+/*表单样式*/
+.x-form-label span
+{
+    font-weight: normal;
+    color: #7a7877;
+}
+
+/*工作上报滚动条*/
+#workReport .x-scroll-scroller,#businessopportunityUpload .x-scroll-scroller,#photographUpload .x-scroll-scroller,#commitApply .x-scroll-scroller{
+    background-color:#fff ;
+    max-width: 98%;
+    min-width: 98%;
+
+    min-height:50%;
+
+    margin: 5% 1% 0% 1%;
+    border: 1px solid #8b8888;
+    border-bottom: none;
+}
+/*工作上报背景色*/
+.x-form .x-scroll-container
+{
+    background-color: #dadade;
+}
+/*工作上报内容样式*/
+.x-field-textarea textarea
+{
+    min-height: 20em;
+}
+/*工作上报文字*/
+#workReport .x-label-align-left, .x-label-align-right,#businessopportunityUpload .x-label-align-left, .x-label-align-right,#photographUpload .x-label-align-left, .x-label-align-right,#announcementQuery .x-label-align-left, .x-label-align-right
+{
+    text-align: right;
+}
+
+/*label居中对齐*/
+.workreportlabel
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 0px;
+    color: #7a7877;
+}
+/*文字下加下划线*/
+.x-label-align-left
+{
+    border-bottom: 1px solid #8b8888
+}
+#workReportContainer
+{
+    border-bottom: 1px solid #8b8888;
+}
+
+/*
+客户详情页面
+*/
+.icon_telephone
+{
+    width: 35px !important;
+    height: 35px !important;
+    background: url("../img/icon_telephone.svg") no-repeat;
+    background-size:100% 100%;
+}
+.icon_message
+{
+    width: 35px !important;
+    height: 35px !important;
+    background: url("../img/icon_message.svg") no-repeat;
+    background-size:100% 100%;
+}
+.icon_edit
+{
+    width: 35px !important;
+    height: 35px !important;
+    background: url("../img/icon_edit.svg") no-repeat;
+    background-size:100% 100%;
+}
+.x-form-fieldset
+{
+    margin: 0em .5em 0em;
+}
+.x-form-fieldset-title
+{
+    margin: 0.2em;
+}
+
+/*
+toggle样式
+*/
+.x-toggle{
+    width: 60px;
+    height: 32px;
+    margin-top: 8px;
+}
+.x-toggle .x-thumb{
+    width: 30px;
+    height: 30px;
+}
+.x-toggle .x-thumb:after{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+}
+
+.x-toggle-on{
+    background-image:none;
+    background-color:#Fc7307;
+}

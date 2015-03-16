@@ -1,0 +1,105 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeItem": null,
+        "designer|userAlias": "hometabpanel",
+        "designer|userClassName": "main.HomeTabPanel",
+        "id": "homeTabPanel",
+        "title": "快捷功能"
+    },
+    "name": "MyTabPanel",
+    "designerId": "c1cd2f44-ea87-49fa-a3f1-e9ab8a9decc1",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": 0,
+                "container|align": null,
+                "container|pack": "justify",
+                "designer|displayName": null,
+                "docked": "bottom",
+                "height": null,
+                "id": null
+            },
+            "name": "MyTabBar",
+            "designerId": "bdf5a79e-c7f0-47cb-8925-8273d00e1398"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "icon-fastoperation",
+                "title": "快捷功能"
+            },
+            "name": "fastoperate.fastoperationmain",
+            "designerId": "241554f7-1aa5-4874-85b2-f4cc39e85765",
+            "masterInstanceId": "b908e59c-d18e-4ef5-9889-c03d1db6b015"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "icon-dailyoffice",
+                "title": "日常办公"
+            },
+            "name": "dailyoffice.dailyofficemain",
+            "designerId": "cc01bca2-9078-4406-b818-156340cfc6a2",
+            "masterInstanceId": "dd94c86a-ba92-4581-8709-32d9ef157db0"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "icon-commercialmanage",
+                "title": "商务管理"
+            },
+            "name": "commercialmanager.commercialmanagemain",
+            "designerId": "9f50875e-0e64-496f-9aba-600c029e9989",
+            "masterInstanceId": "0b226932-ea6c-48a7-9f4a-68e0aef8a39c"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "icon-resourcemanage",
+                "title": "资源管理"
+            },
+            "name": "resourcemanager.resourcemanagemain",
+            "designerId": "fd093219-3fae-4f23-8108-e273c1ceb767",
+            "masterInstanceId": "0104ec2e-a133-4af6-8d63-2085f128e05a"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "resourceManager.BusinessopportunityUploadController"
+    },
+    "name": "MyController",
+    "designerId": "0ec16de0-2894-40a2-b604-fdde39036a1a",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "panel #businessopportunityUpload",
+                "designer|targetType": "resourceManager.BusinessopportunityUpload",
+                "fn": "onBusinessopportunityUploadDeactivate",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "if(me.getSubmit()){",
+                    "    console.log('销毁按钮');",
+                    "    me.getSubmit().destroy();",
+                    "}"
+                ],
+                "name": "deactivate"
+            },
+            "name": "onBusinessopportunityUploadDeactivate",
+            "designerId": "6abc1200-8474-4761-9700-173d581dacd1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "submit",
+                "selector": "#submit"
+            },
+            "name": "submit",
+            "designerId": "702cb32f-c53f-46a0-a0db-dc9fb5b0ec4d"
+        }
+    ]
+}

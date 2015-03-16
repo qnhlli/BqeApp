@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "resourceManager.PhotographUploadController"
+    },
+    "name": "MyController",
+    "designerId": "1cd50432-74a8-4bee-98eb-e37413581ac1",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "panel #photographUpload",
+                "designer|targetType": "resourceManager.PhotographUpload",
+                "fn": "onPhotographUploadDeactivate",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "if(me.getSubmit()){",
+                    "    console.log('销毁按钮');",
+                    "    me.getSubmit().destroy();",
+                    "}"
+                ],
+                "name": "deactivate"
+            },
+            "name": "onPhotographUploadDeactivate",
+            "designerId": "f021f13f-6a49-438c-ad3d-05a702fd004a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "submit",
+                "selector": "#submit"
+            },
+            "name": "submit",
+            "designerId": "7fbf09f6-753c-4220-a3b4-365a78f17fb4"
+        }
+    ]
+}

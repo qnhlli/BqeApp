@@ -1,0 +1,79 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "businessopportunityupload",
+        "designer|userClassName": "resourceManager.BusinessopportunityUpload",
+        "id": "businessopportunityUpload",
+        "itemId": null
+    },
+    "name": "MyFormPanel",
+    "designerId": "4c00256c-cf40-4a94-998d-dcbbdd064b31",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityUploadDate",
+                "label": "日期:",
+                "name": "businessopportunityUploadDate"
+            },
+            "name": "MyTextField12",
+            "designerId": "0c671148-d6d7-4e37-bc47-74700ce1cff1"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityUploadPerson",
+                "label": "上传者:",
+                "name": "businessopportunityUploadPerson",
+                "required": null
+            },
+            "name": "MyTextField13",
+            "designerId": "5cb68bad-7c82-47ff-92e8-61a43a8958ad"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityUploadCustomer",
+                "label": "客户:",
+                "name": "businessopportunityUploadCustomer"
+            },
+            "name": "MyTextField14",
+            "designerId": "f223d59d-3c2f-4658-857b-36b049ad5d90"
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityUploadDescribe",
+                "label": "商机描述:",
+                "name": "businessopportunityUploadDescribe"
+            },
+            "name": "MyTextArea4",
+            "designerId": "8cde16b2-5bac-4db4-a847-19158c0756ef"
+        }
+    ]
+}

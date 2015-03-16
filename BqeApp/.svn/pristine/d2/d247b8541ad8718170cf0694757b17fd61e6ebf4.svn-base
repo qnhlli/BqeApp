@@ -1,0 +1,155 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "announcementquery",
+        "designer|userClassName": "dailyOffice.announcement.AnnouncementQuery",
+        "id": "announcementQuery"
+    },
+    "name": "MyFormPanel",
+    "designerId": "5a3e7c98-8735-430e-a36e-585f6f65ef79",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "announcementQuerySet",
+                "itemId": "announcementQuerySet",
+                "title": ""
+            },
+            "name": "MyFieldSet1",
+            "designerId": "72c619cb-f7c6-41c0-b435-c0fe9903d99b",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "announcementQueryType",
+                        "label": "公告类型:",
+                        "name": "announcementQueryType"
+                    },
+                    "name": "MyTextField15",
+                    "designerId": "071629b7-d133-48eb-929d-dd78fa64ba46"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "announcementQueryPerson",
+                        "label": "发布者:",
+                        "name": "announcementQueryPerson"
+                    },
+                    "name": "MyTextField16",
+                    "designerId": "91cb68f7-3610-4ab9-8524-d534dfd32559"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "announcementQueryStartTime",
+                        "label": "起始时间:",
+                        "name": "announcementQueryStartTime"
+                    },
+                    "name": "MyTextField17",
+                    "designerId": "4cffe054-e06b-492b-85db-188f87e9c31f"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "announcementQueryEndTime",
+                        "label": "终止时间:",
+                        "name": "announcementQueryEndTime"
+                    },
+                    "name": "MyTextField18",
+                    "designerId": "060f1fd4-94d2-422e-a17c-173c80072c7c"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "padding": "6 0 6 0"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "0edd4e37-cfc3-4ba0-9afd-dcefc83e4f2b",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "BtnConfirmAnnouncementQuery",
+                                "docked": null,
+                                "itemId": "BtnConfirmAnnouncementQuery",
+                                "text": "确定"
+                            },
+                            "name": "MyButton6",
+                            "designerId": "6d3c7843-60e6-4b2a-ad7a-67a0397419a3"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 20
+                            },
+                            "name": "MySpacer1",
+                            "designerId": "99563f31-17fd-40f7-9a6a-e7c7bb6b8072"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "BtnCancelAnnouncementQuery",
+                                "itemId": "BtnCancelAnnouncementQuery",
+                                "text": "取消"
+                            },
+                            "name": "MyButton7",
+                            "designerId": "c67eb408-5de7-4ae8-a2e0-df6bd91a0db1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

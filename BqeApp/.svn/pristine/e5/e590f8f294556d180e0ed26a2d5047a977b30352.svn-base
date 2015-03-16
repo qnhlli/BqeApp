@@ -1,0 +1,62 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "commitapply",
+        "designer|userClassName": "dailyOffice.applyManage.CommitApply",
+        "id": "commitApply",
+        "scrollable": true
+    },
+    "name": "MyContainer3",
+    "designerId": "e7f3c512-2e8d-42d2-8692-fe9561460044",
+    "cn": [
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "commitApplyType",
+                "label": "选择类型",
+                "options": [
+                    "[",
+                    "{",
+                    "text:'加班申请',",
+                    "value:'加班申请'",
+                    "},",
+                    "{",
+                    "text:'请假申请',",
+                    "value:'请假申请'",
+                    "},",
+                    "{",
+                    "text:'休假申请',",
+                    "value:'休假申请'",
+                    "},",
+                    "]"
+                ]
+            },
+            "name": "MySelectField",
+            "designerId": "40a01b0c-ef5f-4ad8-8527-0473e7656f05"
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "commitApplyContent",
+                "label": "内容:"
+            },
+            "name": "MyTextArea2",
+            "designerId": "c50415c5-fdaa-406f-9c18-a7274bacfe96"
+        }
+    ]
+}

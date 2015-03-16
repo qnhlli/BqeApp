@@ -1,0 +1,43 @@
+/*导航背景色*/
+.x-tabbar-dark {
+    background: #edeae8;
+}
+/*导航图片点中颜色*/
+/*.x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon :before {*/
+/*color: #Fc7307;*/
+/*}*/
+/*导航字体未点中颜色*/
+/*.x-tabbar-dark  .x-tab {*/
+    /*color: #7a7877;*/
+/*}*/
+/*导航字体点中颜色*/
+.x-tabbar-dark.x-docked-bottom .x-tab-active {
+    color: #Fc7307;
+}
+
+/*title背景色*/
+.x-toolbar-dark
+{
+    background: #edeae8;
+}
+/*title字体颜色*/
+.x-toolbar-dark .x-title
+{
+    color: #7a7877;
+    text-shadow:none;
+}
+
+/*主页的字体颜色*/
+.x-button, .x-toolbar .x-button, .x-tabbar-dark  .x-tab
+{
+    color: #7a7877;
+}
+
+/*列表详情页的背景色*/
+.x-layout-card-item
+{
+    background:#dadade;
+}
+
+
+

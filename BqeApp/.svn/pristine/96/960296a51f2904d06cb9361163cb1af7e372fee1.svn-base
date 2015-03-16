@@ -1,0 +1,42 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WorkReportJsonPStore",
+        "model": "WorkReportModel",
+        "storeId": "workReportJsonPStore"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "ba751976-da3c-4e82-9b3b-7bb850ac93c4",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://192.168.0.100/appserver/server.php/work/workReports/store"
+            },
+            "name": "MyJsonPProxy3",
+            "designerId": "7c92a1dd-9795-4ed0-9515-8108e8c8d6a4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader3",
+                    "designerId": "4930c8e9-1222-4949-a585-80dc4cffd610"
+                }
+            ]
+        }
+    ]
+}

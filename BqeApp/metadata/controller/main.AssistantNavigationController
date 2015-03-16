@@ -1,0 +1,442 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "main.AssistantNavigationController"
+    },
+    "name": "MyController",
+    "designerId": "79244a2a-745f-4f80-bd69-929aafa82317",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "assistantNavigation",
+                "selector": "#assistantNavigation"
+            },
+            "name": "assistantNavigation",
+            "designerId": "bf24f80e-81eb-4ade-8c7a-00afc7303ca8"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "NavigationView执行push操作时的方法",
+                    ""
+                ],
+                "designer|controlQuery": "assistantNavigation",
+                "designer|targetType": "Ext.navigation.View",
+                "fn": "onNavigationviewPush",
+                "implHandler": [
+                    "// console.log('入栈'+view.getId()+'->>itemId:'+view.getItemId());",
+                    "",
+                    "var me = this;",
+                    "if(me.getWorkReport()==view||me.getBusinessopportunityUpload()==view||me.getPhotographUpload()==view||me.getCommitApply()==view)",
+                    "{",
+                    "    var button = Ext.create('Ext.Button',{",
+                    "        text:'提交',",
+                    "        align: 'right',",
+                    "        itemId:'submit'",
+                    "    });",
+                    "    navigationview.getNavigationBar().add(button);",
+                    "}"
+                ],
+                "name": "push"
+            },
+            "name": "onNavigationviewPush",
+            "designerId": "8123d535-8d93-41d0-a1de-304a99a2e848"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    " NavigationView执行pop操作时的方法 ",
+                    " "
+                ],
+                "designer|controlQuery": "assistantNavigation",
+                "designer|targetType": "Ext.navigation.View",
+                "fn": "onNavigationviewPop",
+                "implHandler": [
+                    "// console.log('出栈'+view.getId()+'->>itemId:'+view.getItemId());",
+                    "",
+                    "if(navigationview.getActiveItem()==navigationview.getAt(0)){",
+                    "    var nav = navigationview;",
+                    "    var title = nav.getAt(0).getActiveItem().title;",
+                    "    nav.getNavigationBar().setTitle(title);",
+                    "}"
+                ],
+                "name": "pop"
+            },
+            "name": "onNavigationviewPop",
+            "designerId": "1715f958-8a52-41c7-857a-136acc51c6bd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "",
+                    "所有List的单击跳转事件"
+                ],
+                "designer|controlQuery": "assistantnavigation list",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemSingletap",
+                "implHandler": [
+                    "var me = this;",
+                    "if(dataview.getId()==='customerManageList'){",
+                    "    me.switchView('customerdetailspanel','联系人详情');",
+                    "    me.getCustomerDetailsPanel().setValues({",
+                    "        customerMobile:record.get('customer_mobile'),\t//手机",
+                    "        customerTelephone:record.get('customer_telephone'),\t//座机",
+                    "        customerAddress:record.get('customer_address'),\t//地址",
+                    "        customerMallAccount:'',",
+                    "        customerQQ:'',\t//QQ",
+                    "        customerWX:'',\t//微信",
+                    "        customerEmail:''\t//邮箱",
+                    "    });",
+                    "    return;",
+                    "}",
+                    "me.dataItemSingleTap(record);"
+                ],
+                "name": "itemsingletap"
+            },
+            "name": "onListItemSingletap",
+            "designerId": "417bf527-edc1-4e69-a155-6c7c66f724b8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "attendanceTypeList",
+                "selector": "pushcardtype #attendanceTypeList"
+            },
+            "name": "attendanceTypeList",
+            "designerId": "a2ddf8b2-f6e8-45ac-9b31-47d6159dec83"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReport",
+                "selector": "#workReport"
+            },
+            "name": "workReport",
+            "designerId": "efaeef52-2e13-49ae-b585-71e94a19ec61"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "imgSetting",
+                "selector": "assistantnavigation #imgSetting"
+            },
+            "name": "imgSetting",
+            "designerId": "bdb02516-4301-4d1b-90ec-cacf6c28c422"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "imgSetting",
+                "designer|targetType": "Ext.Button",
+                "fn": "onSystemSettingTap",
+                "implHandler": [
+                    "var me = this;",
+                    "// me.switchView('loginpanel','登录界面');",
+                    "me.switchView('systemsettinglist','系统设置');"
+                ],
+                "name": "tap"
+            },
+            "name": "onSystemSettingTap",
+            "designerId": "0ed82dcb-2c16-4ac0-a88a-332235adb965"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "快捷功能跳转事件",
+                    ""
+                ],
+                "designer|controlQuery": "#fastOperationMain",
+                "designer|targetType": "fastOperate.FastOperationMain",
+                "fn": "onFastOperationMainItemSingletap",
+                "implHandler": [
+                    "this.dataItemSingleTap(record);",
+                    ""
+                ],
+                "name": "itemsingletap"
+            },
+            "name": "onFastOperationMainItemSingletap",
+            "designerId": "0562ae2f-687d-487c-b9a5-a0e4d8ed34e6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "dataItemSingleTap",
+                "implHandler": [
+                    "var me = this;",
+                    "var xtype = record.get('xtype');",
+                    "var title = record.get('title');",
+                    "",
+                    "if(xtype){",
+                    "    me.switchView(xtype,title);",
+                    "}else{",
+                    "    alert('暂无此功能');",
+                    "}"
+                ]
+            },
+            "name": "dataItemSingleTap",
+            "designerId": "44678dda-4e73-40b8-8f38-43daa5418919"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "主要跳转方法",
+                    ""
+                ],
+                "designer|params": [
+                    "xtype",
+                    "title"
+                ],
+                "fn": "switchView",
+                "implHandler": [
+                    "this.getAssistantNavigation().push({",
+                    "    xtype:xtype,",
+                    "    title:title",
+                    "});"
+                ]
+            },
+            "name": "switchView",
+            "designerId": "765ba3b9-24b1-4101-b209-a7cf3774f49f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "slidingmenu button",
+                "designer|targetType": "Ext.Button",
+                "fn": "onSlideMenuButtonTap",
+                "implHandler": [
+                    "",
+                    "var me = this;",
+                    "switch(button.getItemId()){",
+                    "    case  'btnAccountSecurity':",
+                    "        me.switchView('loginpanel','登录界面');",
+                    "        break;",
+                    "    case  'btnFeedBack':",
+                    "        alert('意见反馈');",
+                    "        break;",
+                    "    case  'btnAboutUs':",
+                    "        alert('关于我们');",
+                    "        break;",
+                    "    case  'btnDropOut':",
+                    "        alert('退出登陆');",
+                    "        break;",
+                    "}",
+                    "Ext.Viewport.removeMenu('left');"
+                ],
+                "name": "tap"
+            },
+            "name": "onSlideMenuButtonTap",
+            "designerId": "ea28a915-4cca-489b-bb5d-f2884ac83812"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "businessopportunityUpload",
+                "selector": "#businessopportunityUpload"
+            },
+            "name": "businessopportunityUpload",
+            "designerId": "019b0d29-3912-49c3-9cd6-290a6f80776f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "photographUpload",
+                "selector": "#photographUpload"
+            },
+            "name": "photographUpload",
+            "designerId": "f938db4b-42d0-4eb3-92fb-71fccc70f0d0"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "commitApply",
+                "selector": "#commitApply"
+            },
+            "name": "commitApply",
+            "designerId": "ad4d8aa2-ee91-429f-9682-79cd68370e82"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "customerDetailsPanel",
+                "selector": "#customerDetailsPanel"
+            },
+            "name": "customerDetailsPanel",
+            "designerId": "47c34c93-e6e0-4503-b5f0-5c3bb49720f1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#bqeAssistantMainPanel",
+                "designer|targetType": "main.BqeAssistantMainPanel",
+                "fn": "onBqeAssistantMainPanelInitialize",
+                "implHandler": [
+                    "document.addEventListener(\"deviceready\", onDeviceReady, false);"
+                ],
+                "name": "initialize"
+            },
+            "name": "onBqeAssistantMainPanelInitialize",
+            "designerId": "74d9233d-b009-4596-84dd-54d74a11b7fb"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDeviceReady",
+                "implHandler": [
+                    "// checkConnection();",
+                    "document.addEventListener(\"backbutton\", eventBackButton, false); //返回键",
+                    "document.addEventListener(\"menubutton\", eventMenuButton, false); //菜单键",
+                    "document.addEventListener(\"searchbutton\", eventSearchButton, false); //搜索键"
+                ]
+            },
+            "name": "onDeviceReady",
+            "designerId": "77b1a270-1cc8-4090-9a05-151471d8fec4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "androidButton"
+                ],
+                "fn": "onConfirm",
+                "implHandler": [
+                    "if (androidButton == '1') {",
+                    "    navigator.app.exitApp();",
+                    "} else {",
+                    "",
+                    "}"
+                ]
+            },
+            "name": "onConfirm",
+            "designerId": "9d7364ac-62df-4d62-88e6-99d00613c519"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "eventBackButton",
+                "implHandler": [
+                    "navigator.notification.confirm('点错按钮了？', // 显示信息",
+                    "                               onConfirm, // 按下按钮后触发的回调函数，返回按下按钮的索引",
+                    "                               '退出应用', // 标题",
+                    "                               '确定,取消' // 按钮标签",
+                    "                              );"
+                ]
+            },
+            "name": "eventBackButton",
+            "designerId": "63eedb83-94c4-4c42-8a27-d0adfd72adab"
+        }
+    ]
+}

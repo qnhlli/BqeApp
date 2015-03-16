@@ -1,0 +1,40 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        functionId:\"photographUpload\",",
+            "        xtype:\"photographupload\",",
+            "        iconPath:'resources/img/icon_upload_photograph.svg',",
+            "        title:'拍照上传',",
+            "        moreIcon:false",
+            "    },",
+            "    {",
+            "        functionId:\"businessopportunityQuery\",",
+            "        xtype:\"\",",
+            "        iconPath:'resources/img/icon_businessopportunity_query.svg',",
+            "        title:'商机查询',",
+            "        moreIcon:false",
+            "    },",
+            "    {",
+            "        functionId:\"businessopportunityUpload\",",
+            "        xtype:\"businessopportunityupload\",",
+            "        iconPath:'resources/img/icon_upload_businessopportunity.svg',",
+            "        title:'商机上报',",
+            "        moreIcon:false",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "functionListStore.ResourcesManagementStore",
+        "model": "FunctionListModel",
+        "storeId": "resourcesManagementStore"
+    },
+    "name": "MyStore",
+    "designerId": "6be0118f-e11e-44e8-9be7-89b4e6ffb299"
+}

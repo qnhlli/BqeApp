@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LoginModel"
+    },
+    "name": "MyModel",
+    "designerId": "942399a1-213b-4412-980a-560b668285b9",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "loginAccount"
+            },
+            "name": "field4",
+            "designerId": "526bf5e2-2803-43ec-9294-fa01278727e6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "flag"
+            },
+            "name": "field5",
+            "designerId": "dd398011-b6e0-4a0f-816f-0c41f9dc0d1c"
+        },
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "loginCache"
+            },
+            "name": "MyLocalStorageProxy",
+            "designerId": "27a83a96-1f23-4d5b-88c4-9d8a6f0edc4e"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaultBackButtonText": "`''`",
+        "designer|userAlias": "assistantnavigation",
+        "designer|userClassName": "main.AssistantNavigation",
+        "id": "assistantNavigation"
+    },
+    "name": "MyNavigationView",
+    "configAlternates": {
+        "record": "object"
+    },
+    "designerId": "ff9302ea-568d-44eb-8e2d-f99d81934a5d",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": 0,
+                "bottom": null,
+                "docked": "top",
+                "hidden": false,
+                "html": null,
+                "id": "assistantNavBar"
+            },
+            "name": "MyNavigationBar",
+            "designerId": "973c3d96-68f7-4eca-9587-cfe1711a9535",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 24,
+                        "itemId": "imgMenu",
+                        "src": "resources/img/iocn_meun.svg",
+                        "width": 36
+                    },
+                    "name": "MyImg1",
+                    "designerId": "a4516c6b-4ab5-4b07-b643-5fba464e4261"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "height": 32,
+                        "itemId": "imgSetting",
+                        "src": "resources/img/settings.svg",
+                        "width": 40
+                    },
+                    "name": "MyImg2",
+                    "designerId": "03a81a9f-ff66-42ef-aeb6-311491cf2f18"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "main.hometabpanel",
+            "designerId": "c32f8c4f-86a7-4005-91f8-219caf005e14",
+            "masterInstanceId": "c1cd2f44-ea87-49fa-a3f1-e9ab8a9decc1"
+        }
+    ]
+}

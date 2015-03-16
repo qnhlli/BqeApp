@@ -1,0 +1,86 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|commentHeader": [
+            "功能列表的Model"
+        ],
+        "designer|userClassName": "FunctionListModel"
+    },
+    "name": "MyModel",
+    "designerId": "afe79ebd-03df-4325-9535-f715fea593c4",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "functionId"
+            },
+            "name": "field",
+            "designerId": "4b69ec1f-1dfa-4f38-9e03-a8f173f1bedb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "xtype",
+                "type": null
+            },
+            "name": "field1",
+            "designerId": "17624f59-88e3-41c5-8dfc-5df9a97df497"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "iconPath"
+            },
+            "name": "field21",
+            "designerId": "5c07bdf6-91f6-40fd-bc32-d90027646835"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title",
+                "type": null
+            },
+            "name": "field22",
+            "designerId": "b8041fc6-fd84-4f3d-9e55-47f73aa0def7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "moreIcon",
+                "type": null
+            },
+            "name": "field23",
+            "designerId": "a9c40963-a42e-4c9c-9f7a-6fed8b880e20"
+        }
+    ]
+}

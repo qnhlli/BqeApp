@@ -1,0 +1,172 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "loginpanel",
+        "designer|userClassName": "main.LoginPanel",
+        "height": "100%",
+        "id": "loginPanel",
+        "layout": "vbox"
+    },
+    "designerId": "fd2e7da1-a052-465d-bb5d-3d0300b8d324",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "loginLogo",
+                "height": 110,
+                "id": null,
+                "itemId": "loginLogo",
+                "margin": "5 auto",
+                "src": "resources/img/logo.png",
+                "width": "auto"
+            },
+            "name": "MyImg",
+            "designerId": "ae341269-74c7-4548-92f8-b6bd188a2bfb"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "loginForm",
+                "id": "loginForm",
+                "margin": "0 20 0 20"
+            },
+            "name": "MyContainer11",
+            "designerId": "cae6ca97-6324-4fd4-9b5f-3f36a0c27ca7",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "loginFieldset",
+                        "id": "loginFieldset",
+                        "margin": "-2 0 16 0",
+                        "title": ""
+                    },
+                    "name": "MyFieldSet2",
+                    "designerId": "3010785b-61be-405f-9816-47b934895f8f",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "loginAccount",
+                                "label": "账号:",
+                                "name": "loginAccount"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "5e22ea9b-7bcd-45d2-a25e-aa0c4d45735d"
+                        },
+                        {
+                            "type": "Ext.field.Password",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": null,
+                                "itemId": "loginPassword",
+                                "label": "密码:",
+                                "name": "loginPassword"
+                            },
+                            "name": "MyPasswordField2",
+                            "designerId": "d8a1e3dd-2c3c-4dbb-aad9-1965fd11b7b4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "loginBtnLogin",
+                        "designer|uiInterfaceName": "action",
+                        "id": null,
+                        "itemId": "loginBtnLogin",
+                        "margin": "",
+                        "text": "登录",
+                        "ui": "action"
+                    },
+                    "name": "MyButton",
+                    "designerId": "392f4be0-f8aa-44c5-a41b-c2259bde3509"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "loginFormLabel",
+                        "id": "loginFormLabel",
+                        "layout": "hbox",
+                        "margin": "10 0 0 0"
+                    },
+                    "name": "MyContainer12",
+                    "designerId": "884f9e36-4be2-4a13-b94f-74cf8e3a6d2f",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "loginNewUser",
+                                "html": "新用户",
+                                "id": "loginNewUser"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "dd9817e2-ab3b-4a3c-a025-1bb3a5c3a904"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "loginForgetPassword",
+                                "docked": "right",
+                                "html": "忘记密码",
+                                "id": "loginForgetPassword"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "07f0a5fd-6218-41d2-89e7-545a654fce22"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

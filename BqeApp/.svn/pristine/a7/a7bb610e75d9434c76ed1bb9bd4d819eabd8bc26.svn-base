@@ -1,0 +1,93 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerInfoModel"
+    },
+    "name": "MyModel",
+    "designerId": "283c8b68-cd07-41d6-a625-978c93ae9278",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "field2",
+            "designerId": "a871a0c0-046a-45e5-986b-ea860cc31294"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "customer_name"
+            },
+            "name": "field6",
+            "designerId": "97b79d89-c266-4529-ad26-70d8abc7ae2c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "customer_contact"
+            },
+            "name": "field5",
+            "designerId": "d0aece2c-0648-420c-a195-d170270f0409"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "customer_telephone"
+            },
+            "name": "field3",
+            "designerId": "4d4f51fb-f609-4320-9f3f-af9226976f92"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "customer_mobile"
+            },
+            "name": "field7",
+            "designerId": "1ea76b7b-45bf-49a7-a6f8-32fe206ed02f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "customer_address"
+            },
+            "name": "field4",
+            "designerId": "b72a813e-215d-4e25-ba81-72fd8d74b4f7"
+        }
+    ]
+}

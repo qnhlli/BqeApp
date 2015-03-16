@@ -1,0 +1,259 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "dailyOffice.WorkReportController"
+    },
+    "name": "MyController",
+    "designerId": "3be032dc-049c-42ac-8d8a-dc4103776fdb",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReport",
+                "selector": "#workReport"
+            },
+            "name": "workReport",
+            "designerId": "98c3e265-70bc-447b-ba34-c25802765780"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "workreport",
+                "designer|targetType": "dailyOffice.WorkReport",
+                "fn": "onWorkReportInitialize",
+                "implHandler": [
+                    "console.log('初始化工作上报');",
+                    "",
+                    "",
+                    "",
+                    "var WorkReportJsonPStore=Ext.getStore('workReportJsonPStore');",
+                    "",
+                    "WorkReportJsonPStore.load({",
+                    "    callback: function(records, operation, success) {",
+                    "        console.log(records);",
+                    "        this.getWorkReport().setValues({",
+                    "            workReportTitle:records[0].get('workReportCheckPerson')",
+                    "        });",
+                    "    },",
+                    "    scope: this",
+                    "});",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "initialize"
+            },
+            "name": "onWorkReportInitialize",
+            "designerId": "3fee3733-6bd4-4360-94b2-93388d097382"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "panel #workReport",
+                "designer|targetType": "dailyOffice.WorkReport",
+                "fn": "onWorkReportDeactivate",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "if(me.getSubmit()){",
+                    "    console.log('销毁按钮');",
+                    "    me.getSubmit().destroy();",
+                    "}"
+                ],
+                "name": "deactivate"
+            },
+            "name": "onWorkReportDeactivate",
+            "designerId": "06bd454c-ca16-47ab-a359-c14ab4927e86"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportCheckPerson",
+                "selector": "#workReportCheckPerson"
+            },
+            "name": "workReportCheckPerson",
+            "designerId": "c8e9c8ee-a1ce-42a7-a200-3188524747c4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportTitle",
+                "selector": "#workReportTitle"
+            },
+            "name": "workReportTitle",
+            "designerId": "90118585-3bcd-4227-b559-6dcf4e50aa75"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportType",
+                "selector": "#workReportType"
+            },
+            "name": "workReportType",
+            "designerId": "268bbff5-27d9-443a-a4ac-43194e8de7d9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportNeedCheck",
+                "selector": "#workReportNeedCheck"
+            },
+            "name": "workReportNeedCheck",
+            "designerId": "3dcce651-06b8-4bcf-a1e1-00c17e18c9dc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportContent",
+                "selector": "#workReportContent"
+            },
+            "name": "workReportContent",
+            "designerId": "04e22eec-52e6-428e-ab94-bd24ab22f22b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "submit",
+                "designer|targetType": "Ext.Button",
+                "fn": "onSubmitTap",
+                "implHandler": [
+                    "console.log('确认上报');",
+                    "",
+                    "var form=this.getWorkReport();",
+                    "var WorkReportJsonPStore=Ext.getStore('workReportJsonPStore');",
+                    "var values = form.getValues();",
+                    "",
+                    "//把对象转成JSON格式的字符串",
+                    "console.log(Ext.JSON.encode(values)+'values');",
+                    "",
+                    "Ext.data.JsonP.request({",
+                    "    url: 'http://192.168.0.100/appserver/server.php/work/workReports/store',",
+                    "    params:values,",
+                    "    success: function(result) {",
+                    "        console.log(Ext.JSON.encode(result)+'成功');",
+                    "    },",
+                    "    failure: function(result) {",
+                    "        alert('失败'+result);",
+                    "    }",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "name": "onSubmitTap",
+            "designerId": "9e350cba-91c9-4371-b209-315f3dc5988d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getNowFormatDate",
+                "implHandler": [
+                    "var day = new Date();",
+                    "",
+                    "var Year = 0;",
+                    "var Month = 0;",
+                    "var Day = 0;",
+                    "var CurrentDate = \"\";",
+                    "//初始化时间",
+                    "//Year       = day.getYear();//有火狐下2008年显示108的bug",
+                    "Year       = day.getFullYear();//ie火狐下都可以",
+                    "Month      = day.getMonth()+1;",
+                    "Day        = day.getDate();",
+                    "",
+                    "CurrentDate += Year + \"-\";",
+                    "",
+                    "if (Month >= 10 )",
+                    "{",
+                    "    CurrentDate += Month + \"-\";",
+                    "}",
+                    "else",
+                    "{",
+                    "    CurrentDate += \"0\" + Month + \"-\";",
+                    "}",
+                    "if (Day >= 10 )",
+                    "{",
+                    "    CurrentDate += Day ;",
+                    "}",
+                    "else",
+                    "{",
+                    "    CurrentDate += \"0\" + Day ;",
+                    "}",
+                    "",
+                    "return CurrentDate;"
+                ]
+            },
+            "name": "getNowFormatDate",
+            "designerId": "d01f51e9-1fc7-4063-9f50-242a1f22d151"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "submit",
+                "selector": "#assistantNavBar #submit"
+            },
+            "name": "submit",
+            "designerId": "518ccf28-5e3e-40c7-b9cb-edb6e302327d"
+        }
+    ]
+}

@@ -1,0 +1,428 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fastoperationsetting",
+        "designer|userClassName": "fastOperate.FastOperationSetting",
+        "fullscreen": true,
+        "id": "fastOperationSetting",
+        "itemId": null,
+        "scrollable": true
+    },
+    "name": "MyContainer",
+    "designerId": "a3adfa76-b245-49d6-b1fc-ed0c284dcefb",
+    "cn": [
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "addressBook",
+                "label": "<img src=\"resources/img/icon_address_book.svg\"/> <span class=\"fastOperateSettingTitle\">通讯录 </span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "dailyOffice"
+            },
+            "name": "MyToggleField",
+            "designerId": "8cc4ea61-466b-4a38-b6ae-527ae6ce2af8",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "announcement",
+                "label": "<img src=\"resources/img/icon_announcement.svg\"/><span class=\"fastOperateSettingTitle\">通知公告</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "dailyOffice"
+            },
+            "name": "MyToggleField1",
+            "designerId": "16e8d871-adfb-4e78-9190-99f8ca7749d5",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "workReport",
+                "label": "<img src=\"resources/img/icon_workreport.svg\"/> <span class=\"fastOperateSettingTitle\">工作上报</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "dailyOffice"
+            },
+            "name": "MyToggleField2",
+            "designerId": "f7ccf843-63e0-40c8-bf4f-afbefd8bb204",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "reportQuery",
+                "label": "<img src=\"resources/img/icon_query_report.svg\"/> <span class=\"fastOperateSettingTitle\">上报查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "dailyOffice"
+            },
+            "name": "MyToggleField3",
+            "designerId": "e6c0800d-eafc-4bde-9e54-5e130622fc86",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "applicationUpload",
+                "label": "<img src=\"resources/img/icon_application_upload.svg\"/> <span class=\"fastOperateSettingTitle\">提交申请</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "applyManage"
+            },
+            "name": "MyToggleField4",
+            "designerId": "991c7753-bf7f-4d5f-b3bf-3bc9373e42b7",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "applicationQuery",
+                "label": "<img src=\"resources/img/icon_application_query.svg\"/> <span class=\"fastOperateSettingTitle\">申请查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "applyManage"
+            },
+            "name": "MyToggleField5",
+            "designerId": "d90b85e4-300f-44e1-ac06-291f66030386",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "attendantPushcard",
+                "label": "<img src=\"resources/img/icon_attendant_pushcard.svg\"/> <span class=\"fastOperateSettingTitle\">考勤打卡</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "attendanceManage"
+            },
+            "name": "MyToggleField6",
+            "designerId": "519be9d2-4a48-4554-ac57-ead1422abad0",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "attendantQuery",
+                "label": "<img src=\"resources/img/icon_attendant_query.svg\"/> <span class=\"fastOperateSettingTitle\">考勤查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "attendanceManage"
+            },
+            "name": "MyToggleField7",
+            "designerId": "5527f04b-343a-482b-bc53-ff81804c45c4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "customerManage",
+                "label": "<img src=\"resources/img/icon_customer_namage.svg\"/> <span class=\"fastOperateSettingTitle\">客户管理</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "commercialManager"
+            },
+            "name": "MyToggleField8",
+            "designerId": "57e4df94-7176-4434-abe9-bca23b8e91f8",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "productQuery",
+                "label": "<img src=\"resources/img/icon_product_query.svg\"/> <span class=\"fastOperateSettingTitle\">产品查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "commercialManager"
+            },
+            "name": "MyToggleField9",
+            "designerId": "2fa30841-4c9a-4d8e-b5c4-e68297b82dc8",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "quotedPriceApply",
+                "label": "<img src=\"resources/img/icon_quoted_price_apply.svg\"/> <span class=\"fastOperateSettingTitle\">报价申请</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "priceManage"
+            },
+            "name": "MyToggleField10",
+            "designerId": "510dc606-7bf9-4ce5-832f-66b57db9d2a4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "quotedPriceQuery",
+                "label": "<img src=\"resources/img/icon_quoted_price_query.svg\"/> <span class=\"fastOperateSettingTitle\">报价查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "priceManage"
+            },
+            "name": "MyToggleField11",
+            "designerId": "dc187640-aff2-4855-be25-d937b06e76c0",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ordersQuery",
+                "label": "<img src=\"resources/img/icon_orders_query.svg\"/> <span class=\"fastOperateSettingTitle\">订单查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "commercialManager"
+            },
+            "name": "MyToggleField12",
+            "designerId": "a8c7173f-d24e-414c-81f3-c69b7ba58911",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "salesReport",
+                "label": "<img src=\"resources/img/icon_sales_report.svg\"/> <span class=\"fastOperateSettingTitle\">销售报表</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "commercialManager"
+            },
+            "name": "MyToggleField13",
+            "designerId": "14647afb-d169-436d-a19d-77d963a5b978",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photographUpload",
+                "label": "<img src=\"resources/img/icon_upload_photograph.svg\"/> <span class=\"fastOperateSettingTitle\">拍照上传</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "resourceManager"
+            },
+            "name": "MyToggleField14",
+            "designerId": "fc09a43a-effc-4c5d-9342-8a645ba93468",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityUpload",
+                "label": "<img src=\"resources/img/icon_upload_businessopportunity.svg\"/> <span class=\"fastOperateSettingTitle\">商机上报</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "resourceManager"
+            },
+            "name": "MyToggleField15",
+            "designerId": "036eb1ae-6118-4a9c-b89c-b7cde12d875c",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Toggle",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "businessopportunityQuery",
+                "label": "<img src=\"resources/img/icon_businessopportunity_query.svg\"/> <span class=\"fastOperateSettingTitle\">商机查询</span>",
+                "labelCls": "fastOperateSettingCls",
+                "labelWidth": "68%",
+                "type": "resourceManager"
+            },
+            "name": "MyToggleField16",
+            "designerId": "d3b38ef9-24f1-4e76-bacc-a30334defc60",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "type",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

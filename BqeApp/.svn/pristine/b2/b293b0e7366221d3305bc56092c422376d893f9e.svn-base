@@ -1,0 +1,46 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoSync": true,
+        "designer|userClassName": "ArticleListStore",
+        "model": "ArticleListModel",
+        "storeId": "ArticleListStore"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "1b8e62e8-15b4-412e-8ac6-22e8f629fdcd",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://www.phonegap100.com/appapi.php"
+            },
+            "name": "MyJsonPProxy1",
+            "designerId": "bfa6ef74-4ec9-4c77-ae0d-d3655047b4c8",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "result"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "97b780ef-1f87-4316-ada1-b2ea23ff6020"
+                }
+            ]
+        }
+    ]
+}

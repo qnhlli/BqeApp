@@ -1,0 +1,75 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "dailyOffice.ReportQueryController"
+    },
+    "name": "MyController",
+    "designerId": "4a26f468-b29c-42c5-ac0b-6db77882e392",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "workreport",
+                "designer|targetType": "dailyOffice.WorkReport",
+                "fn": "onWorkReportInitialize",
+                "implHandler": [
+                    "console.log('初始化工作上报');",
+                    "",
+                    "",
+                    "var WorkReportJsonPStore=Ext.getStore('ReportQueryJsonPStore');",
+                    "",
+                    "WorkReportJsonPStore.load({",
+                    "    callback: function(records, operation, success) {",
+                    "        console.log(records);",
+                    "        this.getWorkReport().setValues({",
+                    "            workReportTitle:records[0].get('workReportCheckPerson')",
+                    "        });",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "name": "onWorkReportInitialize",
+            "designerId": "038df839-051c-45ec-a233-6973ee447a02"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportTitle",
+                "selector": "#workReportTitle"
+            },
+            "name": "workReportTitle",
+            "designerId": "7656400f-4239-4bbb-bfcf-ca22650f7c8e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "workReportCheckPerson",
+                "selector": "#workReportCheckPerson"
+            },
+            "name": "workReportCheckPerson",
+            "designerId": "f1830a68-0312-479a-a472-09b34788f627"
+        }
+    ]
+}

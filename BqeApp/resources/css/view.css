@@ -1,0 +1,9 @@
+/* 隐藏x方向滚动条 */
+.x-scroll-bar-x.active {
+    width: 0px;
+}
+/* 隐藏y方向滚动条 */
+.x-scroll-bar-y.active {
+    width: 0px;
+}
+

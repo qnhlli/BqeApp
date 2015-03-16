@@ -1,0 +1,68 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "attendancequerydetail",
+        "designer|userClassName": "dailyOffice.attendance.query.AttendanceQueryDetail",
+        "id": "attendanceQueryDetail",
+        "itemId": null
+    },
+    "designerId": "f4ec4911-2802-443d-8e9e-f6145f91e7fe",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": true,
+                "id": null,
+                "itemId": "address",
+                "label": "位置:",
+                "name": "address"
+            },
+            "name": "MyTextField5",
+            "designerId": "43ce3c1d-883f-484a-adcd-a3ccb04177bc"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": true,
+                "itemId": "attendTime",
+                "label": "打卡时间:",
+                "labelWidth": "35%",
+                "name": "attendTime"
+            },
+            "name": "MyTextField7",
+            "designerId": "fc625aa5-25ba-466d-a2aa-d381c5953d91"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disabled": true,
+                "itemId": "attendType",
+                "label": "打卡类型:",
+                "labelWidth": "45%",
+                "name": "attendType"
+            },
+            "name": "MyTextField8",
+            "designerId": "4b9b0430-bb16-4130-990e-42b607271314"
+        }
+    ]
+}

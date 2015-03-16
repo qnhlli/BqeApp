@@ -1,0 +1,92 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "main.AssistantNavigationController",
+            "dailyOffice.WorkReportController",
+            "dailyOffice.AttendanceManageController",
+            "main.BqeAssistantMainController",
+            "commercialManage.CommercialManagerController",
+            "dailyOffice.ReportQueryController",
+            "fastOperate.FastOperationMainController",
+            "dailyOffice.ApplyMangerController",
+            "resourceManager.BusinessopportunityUploadController",
+            "resourceManager.PhotographUploadController"
+        ],
+        "models": [
+            "CategoriesModel",
+            "ArticleListModel",
+            "LoginModel",
+            "CustomerInfoModel",
+            "WorkReportModel",
+            "AttendanceQueryModel",
+            "FunctionListModel"
+        ],
+        "name": "BqeApp",
+        "requires": [
+            "Ext.data.JsonP"
+        ],
+        "stores": [
+            "ArticleListStore",
+            "LoginStore",
+            "CustomerContactJsonPStore",
+            "WorkReportJsonPStore",
+            "attendanceQueryJsonPStore",
+            "functionListStore.DailyOfficeStore",
+            "functionListStore.CommercialManagementStore",
+            "functionListStore.ResourcesManagementStore",
+            "PushCardTypeStore",
+            "ReportQueryJsonPStore",
+            "functionListStore.FastOperationStore",
+            "functionListStore.SystemSettingsStore",
+            "functionListStore.AttendanceManageStore",
+            "functionListStore.ApplyManageStore",
+            "functionListStore.PriceManageStore"
+        ],
+        "views": [
+            "main.LoginPanel",
+            "main.AssistantNavigation",
+            "dailyOffice.attendance.query.AttendanceQueryView",
+            "main.HomeTabPanel",
+            "main.BqeAssistantMainPanel",
+            "dailyOffice.attendance.AttendanceManage",
+            "dailyOffice.attendance.pushcard.PushCardType",
+            "dailyOffice.attendance.pushcard.PushCardDetail",
+            "commercialManager.customer.CustomerDetailsPanel",
+            "dailyOffice.WorkReport",
+            "commercialManager.customer.CustomerManageList",
+            "dailyOffice.DailyOfficeMain",
+            "dailyOffice.attendance.query.AttendanceQueryDetail",
+            "fastOperate.FastOperationMain",
+            "main.SlidingMenu",
+            "fastOperate.FastOperationSetting",
+            "main.SystemSettingList",
+            "dailyOffice.applyManage.CommitApply",
+            "dailyOffice.applyManage.ApplyQuery",
+            "dailyOffice.applyManage.ApplyManageMain",
+            "commercialManager.priceManage.PriceManageMian",
+            "resourceManager.PhotographUpload",
+            "resourceManager.BusinessopportunityUpload",
+            "dailyOffice.announcement.AnnouncementQuery"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Viewport",
+            "reference": {
+                "name": "viewport",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "Viewport",
+            "designerId": "3f35a098-0a71-42ce-995b-74f166ecc53c"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "bqeassistantmainpanel",
+        "designer|userClassName": "main.BqeAssistantMainPanel",
+        "height": "100%",
+        "id": "bqeAssistantMainPanel",
+        "layout": "card"
+    },
+    "name": "MyPanel8",
+    "designerId": "41ba057a-8817-4466-b707-3a2c17fdf978",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "main.assistantnavigation",
+            "designerId": "691147d7-7d35-4ede-9970-0a218b2107ce",
+            "masterInstanceId": "ff9302ea-568d-44eb-8e2d-f99d81934a5d"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "allowDeselect": null,
+        "designer|userAlias": "dailyofficemain",
+        "designer|userClassName": "dailyOffice.DailyOfficeMain",
+        "disableSelection": true,
+        "disabled": false,
+        "grouped": false,
+        "height": null,
+        "id": "dailyOfficeMain",
+        "itemId": null,
+        "onItemDisclosure": false,
+        "store": "dailyOfficeStore",
+        "ui": null
+    },
+    "name": "MyList3",
+    "configAlternates": {
+        "tag": "number"
+    },
+    "designerId": "dd94c86a-ba92-4581-8709-32d9ef157db0",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img  src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "77ee0352-dadd-49b4-85c2-6e1127300636"
+        }
+    ]
+}

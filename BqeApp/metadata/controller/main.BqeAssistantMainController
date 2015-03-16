@@ -1,0 +1,398 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "main.BqeAssistantMainController"
+    },
+    "name": "MyController",
+    "designerId": "d9077591-5c92-418c-aee9-0c944f180e8f",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "assistantNavigation",
+                "selector": "#assistantNavigation"
+            },
+            "name": "assistantNavigation",
+            "designerId": "b6725d68-6592-4833-8e3a-b94c9701f9cd"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "",
+                    "TabPanel项改变监听",
+                    ""
+                ],
+                "designer|controlQuery": "#homeTabPanel",
+                "designer|targetType": "main.HomeTabPanel",
+                "fn": "onHomeTabPanelActiveItemChange",
+                "implHandler": [
+                    "this.getAssistantNavigation().getNavigationBar().setTitle(value.title);"
+                ],
+                "name": "activeitemchange"
+            },
+            "name": "onHomeTabPanelActiveItemChange",
+            "designerId": "b2890cbb-f5dd-4cc4-aaf1-e3d0676186d2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "当主页是活动项的时候执行",
+                    ""
+                ],
+                "designer|controlQuery": "#homeTabPanel",
+                "designer|targetType": "main.HomeTabPanel",
+                "fn": "onHomeTabPanelActivate",
+                "implHandler": [
+                    "var me = this;",
+                    "if(me.getImgMenu() && me.getImgSetting()){",
+                    "    if(me.getImgMenu().isHidden() && me.getImgSetting().isHidden()){",
+                    "        me.getImgMenu().show();",
+                    "        me.getImgSetting().show();",
+                    "    }",
+                    "}"
+                ],
+                "name": "activate"
+            },
+            "name": "onHomeTabPanelActivate",
+            "designerId": "77b33f74-88d9-44a4-86f9-0cb72d5bdfd5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "当主页不是活动项的时候执行",
+                    ""
+                ],
+                "designer|controlQuery": "panel #homeTabPanel",
+                "designer|targetType": "main.HomeTabPanel",
+                "fn": "onHomeTabPanelDeactivate",
+                "implHandler": [
+                    "var me = this;",
+                    "if(!me.getImgMenu().isHidden() && !me.getImgSetting().isHidden()){",
+                    "    me.getImgMenu().hide();",
+                    "    me.getImgSetting().hide();",
+                    "}"
+                ],
+                "name": "deactivate"
+            },
+            "name": "onHomeTabPanelDeactivate",
+            "designerId": "7c60d865-e0c5-4c77-ac5f-7a10474efce8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginAccount",
+                "selector": "loginpanel #loginAccount"
+            },
+            "name": "loginAccount",
+            "designerId": "94869b9f-0523-416f-944b-ce1b1a5d2d45"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginPassword",
+                "selector": "loginpanel #loginPassword"
+            },
+            "name": "loginPassword",
+            "designerId": "efd0782c-8cdb-4247-9adc-387b65580232"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginBtnLogin",
+                "selector": "loginpanel #loginBtnLogin"
+            },
+            "name": "loginBtnLogin",
+            "designerId": "29b7dc09-592a-4be4-8b6f-619925b83f0b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#loginPanel",
+                "designer|targetType": "main.LoginPanel",
+                "fn": "onLoginPanelInitialize",
+                "implHandler": [
+                    "var me = this;",
+                    "var loginLocalStore = Ext.getStore('LoginStore');",
+                    "var indexMylocalStore = loginLocalStore.find(\"flag\",\"first\");",
+                    "",
+                    "if(indexMylocalStore != -1){",
+                    "    //历史记录的帐号",
+                    "    var historyAccount = loginLocalStore.getAt(indexMylocalStore).get('loginAccount');",
+                    "    me.getLoginAccount().setValue(historyAccount);",
+                    "}"
+                ],
+                "name": "initialize"
+            },
+            "name": "onLoginPanelInitialize",
+            "designerId": "d7819aae-b8e5-43f9-ae76-6d8778acf577"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "loginBtnLogin",
+                "designer|targetType": "Ext.Button",
+                "fn": "onLoginFun",
+                "implHandler": [
+                    "var me = this;",
+                    "var txtLoginAccount = me.getLoginAccount().getValue();",
+                    "var txtLoginPassword = me.getLoginPassword().getValue();",
+                    "",
+                    "if(Ext.isEmpty(txtLoginAccount) || Ext.isEmpty(txtLoginPassword)){",
+                    "    alert('用户名或密码不能为空!');",
+                    "    //me.createOverlay(me.getTxtAccount(), \"用户名或密码不能为空!\");",
+                    "    return;",
+                    "}",
+                    "",
+                    "Ext.Viewport.setMasked({",
+                    "    xtype:'loadmask',",
+                    "    message:'正在登录'",
+                    "});",
+                    "",
+                    "Ext.data.JsonP.request({",
+                    "    url: 'http://192.168.0.100/appserver/server.php/employee/login',",
+                    "    //传递参数",
+                    "    params: {",
+                    "        account : txtLoginAccount,",
+                    "        password: txtLoginPassword",
+                    "    },",
+                    "    timeout: 30000,//超时时间",
+                    "    callbackKey: '',//回调函数名，默认为callback",
+                    "    callback: function() { //回调函数，不管请求成功与否都执行",
+                    "    },",
+                    "    //请求成功时执行捉拿",
+                    "    success: function(result) {",
+                    "        console.log(result);",
+                    "",
+                    "        // 保存信息到本地",
+                    "        me.saveToLocal(txtLoginAccount,'first');",
+                    "",
+                    "        //登录成功操作",
+                    "        if(result.result){",
+                    "            me.getAssistantNavigation().pop();",
+                    "        }else{",
+                    "            alert('登录失败!');",
+                    "        }",
+                    "        Ext.Viewport.unmask();",
+                    "    },",
+                    "    //请求失败时执行操作",
+                    "    failure: function() {",
+                    "        alert('请求登录失败!');",
+                    "        Ext.Viewport.unmask();",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "onLoginFun",
+            "designerId": "15ec4dff-9b72-4bc0-b5b8-8088325f315a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "loginAccount",
+                    "flag"
+                ],
+                "fn": "saveToLocal",
+                "implHandler": [
+                    "var loginLocalStore = Ext.getStore('LoginStore');",
+                    "loginLocalStore.removeAll();",
+                    "loginLocalStore.getProxy().clear();",
+                    "loginLocalStore.sync();",
+                    "",
+                    "loginLocalStore.add({",
+                    "    loginAccount : loginAccount,",
+                    "    flag:flag",
+                    "});",
+                    "loginLocalStore.sync();"
+                ]
+            },
+            "name": "saveToLocal",
+            "designerId": "b7fabc3b-2525-4447-a70a-272c3fca294e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "imgMenu",
+                "selector": "assistantnavigation #imgMenu"
+            },
+            "name": "imgMenu",
+            "designerId": "61ff887f-b6a5-46f9-8184-07ebfc1cc236"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "imgSetting",
+                "selector": "assistantnavigation #imgSetting"
+            },
+            "name": "imgSetting",
+            "designerId": "485a1287-4ff6-46a9-b582-d84ba77369c7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    " 隐藏首页头部按钮",
+                    " "
+                ],
+                "fn": "hiddenTitleWideget",
+                "implHandler": [
+                    "var me = this;",
+                    "if(!me.getImgMenu().isHidden() && !me.getImgSetting().isHidden()){",
+                    "    me.getImgMenu().hide();",
+                    "    me.getImgSetting().hide();",
+                    "}",
+                    ""
+                ]
+            },
+            "name": "hiddenTitleWideget",
+            "designerId": "1d608660-bea1-434b-a299-ca4ec4236d8f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "显示首页头部按钮",
+                    ""
+                ],
+                "fn": "showTitleWideget",
+                "implHandler": [
+                    "var me = this;",
+                    "if(me.getImgMenu() ){",
+                    "    if(me.getImgMenu().isHidden() && me.getImgSetting().isHidden()){",
+                    "        me.getImgMenu().show();",
+                    "        me.getImgSetting().show();",
+                    "    }",
+                    "}"
+                ]
+            },
+            "name": "showTitleWideget",
+            "designerId": "59f04b4c-5857-45cf-a581-25ffe9c6d1eb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "",
+                    " 侧滑",
+                    ""
+                ],
+                "designer|controlQuery": "imgMenu",
+                "designer|targetType": "Ext.Button",
+                "fn": "onMenuTap",
+                "implHandler": [
+                    "var viewport = Ext.Viewport.down('mymenu');//自定义的menu组件",
+                    "var menu = null;",
+                    "",
+                    "if(viewport === null){",
+                    "    menu =Ext.Viewport.down('mymenu') || Ext.widget('slidingmenu');",
+                    "    Ext.Viewport.setMenu(menu,{",
+                    "        side:'left',//从左边滑出",
+                    "        // reveal: true,",
+                    "        cover:false//menu有遮罩效果",
+                    "    });",
+                    "    Ext.Viewport.showMenu('left');//从左边滑出menu组件",
+                    "",
+                    "}else{",
+                    "    menu =viewport;",
+                    "    Ext.Viewport.setMenu(menu,{",
+                    "        side:'left',",
+                    "        // reveal: true,",
+                    "        cover:false",
+                    "    });",
+                    "    Ext.Viewport.showMenu('left');",
+                    "    // Ext.Viewport.toggleMenu('left');",
+                    "",
+                    "}",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "name": "onMenuTap",
+            "designerId": "e5619d9f-7565-4502-bf7a-080180f3ddaf"
+        }
+    ]
+}

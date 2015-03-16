@@ -1,0 +1,42 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "attendancemanage",
+        "designer|userClassName": "dailyOffice.attendance.AttendanceManage",
+        "disableSelection": true,
+        "height": "100%",
+        "id": "attendanceManage",
+        "itemId": null,
+        "store": "attendanceManageStore"
+    },
+    "designerId": "0686dc49-cdf7-4b81-b870-c7c46160dd5c",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img  src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "fbeebebb-310f-44ba-9dbb-e2991f1c9f47"
+        }
+    ]
+}

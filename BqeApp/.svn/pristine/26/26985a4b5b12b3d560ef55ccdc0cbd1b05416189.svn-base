@@ -1,0 +1,164 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "alternateClassName": [
+            "WorkReport"
+        ],
+        "designer|commentHeader": [
+            "工作上报"
+        ],
+        "designer|userAlias": "workreport",
+        "designer|userClassName": "dailyOffice.WorkReport",
+        "id": "workReport",
+        "itemId": null
+    },
+    "designerId": "a056f65e-7ce7-4d5c-bdef-bce4e79c172c",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "workReportTitle",
+                "label": "标题:",
+                "labelWidth": null,
+                "left": null,
+                "name": "workReportTitle",
+                "placeHolder": null
+            },
+            "name": "MyTextField",
+            "designerId": "54da963f-dba4-438f-ae9b-99fa24a77a99"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "workReportType",
+                "label": "上报类型:",
+                "labelWidth": null,
+                "name": "workReportType"
+            },
+            "name": "MyTextField1",
+            "designerId": "91468614-c923-4e02-baf0-877afec1599c"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "workReportContainer",
+                "id": "workReportContainer",
+                "layout": "hbox"
+            },
+            "name": "MyContainer5",
+            "designerId": "999c2f55-e9ae-450b-b9e3-11a6072d8caa",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": null,
+                        "cls": [
+                            "workreportlabel"
+                        ],
+                        "designer|displayName": "workReportIsCheck",
+                        "docked": null,
+                        "html": "申请审核:",
+                        "id": "workReportIsCheck",
+                        "margin": null,
+                        "width": null
+                    },
+                    "name": "MyLabel5",
+                    "designerId": "ef429ead-2cce-43f8-af2a-40bedaa4451f"
+                },
+                {
+                    "type": "Ext.field.Radio",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "workReportYesCheck",
+                        "label": "是",
+                        "labelAlign": "right",
+                        "name": "workReportNeedCheck",
+                        "value": "1"
+                    },
+                    "name": "MyRadioButton2",
+                    "designerId": "cb1350cb-1125-4a8e-a710-379da06610ec"
+                },
+                {
+                    "type": "Ext.field.Radio",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "workReportNoCheck",
+                        "label": "否",
+                        "labelAlign": "right",
+                        "name": "workReportNeedCheck",
+                        "value": "0"
+                    },
+                    "name": "MyRadioButton3",
+                    "designerId": "de6405cf-7887-4b2e-8a9d-bc8ce019a27c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "workReportCheckPerson",
+                "label": "审核人:",
+                "labelWidth": null,
+                "name": "workReportCheckPerson"
+            },
+            "name": "MyTextField6",
+            "designerId": "6246b49f-8b6b-48bc-bb8a-5b2ab437d149"
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "workReportContent",
+                "label": "内容:",
+                "labelWidth": null,
+                "name": "workReportContent"
+            },
+            "name": "MyTextArea",
+            "designerId": "8bc54966-84f0-4da7-a1a7-75c8cbcea836"
+        }
+    ]
+}

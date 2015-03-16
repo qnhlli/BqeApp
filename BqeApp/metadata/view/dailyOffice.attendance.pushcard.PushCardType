@@ -1,0 +1,67 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pushcardtype",
+        "designer|userClassName": "dailyOffice.attendance.pushcard.PushCardType",
+        "id": "pushCardType"
+    },
+    "designerId": "ab6cd87a-5489-4c03-9564-a9e863838290",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "考勤时段:08:30-17:30",
+                "itemId": "timeBucket"
+            },
+            "name": "MyLabel2",
+            "designerId": "ab84dbb5-732f-48f3-9f6a-b35507f1c6f8"
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "hidden": false,
+                "itemId": "attendanceTypeList",
+                "onItemDisclosure": false,
+                "store": "PushCardTypeStore"
+            },
+            "name": "MyList1",
+            "designerId": "46d95b30-d256-4679-ba84-dc50096e59b3",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>",
+                            "    {title} ",
+                            "</div>"
+                        ]
+                    },
+                    "name": "itemTpl",
+                    "designerId": "30f024c9-c337-49d8-9fac-945f102dcc40"
+                }
+            ]
+        }
+    ]
+}

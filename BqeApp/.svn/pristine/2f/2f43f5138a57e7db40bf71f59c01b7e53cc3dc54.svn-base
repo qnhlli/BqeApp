@@ -1,0 +1,126 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "attendancequeryview",
+        "designer|userClassName": "dailyOffice.attendance.query.AttendanceQueryView",
+        "id": "attendanceQueryView"
+    },
+    "designerId": "584f013d-dcd0-4217-9d0c-e04e293de0d0",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "timeFieldSet",
+                "title": null
+            },
+            "name": "MyFieldSet",
+            "designerId": "ac8b1d53-a8bd-4d7b-8856-d01f9c56c862",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "itemId": "startTime",
+                        "label": "起始时间:",
+                        "labelWidth": null,
+                        "name": "startTime"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "2d1e65e1-75c2-4c3a-80e0-6858f003775f"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "endTime",
+                        "label": "终止时间:",
+                        "labelWidth": null,
+                        "name": "endTime"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "4e86ab79-109b-4f54-aad7-abced4099e0e"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": null,
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "padding": "6 0 6 0"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "66f5503b-1524-4bce-aed3-0ed20ffbccdd",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "btnConfirmTime",
+                                "text": "确定"
+                            },
+                            "name": "MyButton",
+                            "designerId": "d73e6768-f149-416b-b8b4-c5660fb02622"
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "hidden": null,
+                                "width": 80
+                            },
+                            "name": "MySpacer",
+                            "designerId": "491ad1bb-b499-44c5-a64d-b7d08cc6e4ca"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "itemId": "btnResetTime",
+                                "text": "重置"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "fd7af848-ccfe-4483-8d7e-4fa2a42d0235"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

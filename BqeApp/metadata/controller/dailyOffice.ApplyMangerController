@@ -1,0 +1,52 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "dailyOffice.ApplyMangerController"
+    },
+    "name": "MyController",
+    "designerId": "ea016fd0-528f-4112-8646-962fd9accd2c",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "submit",
+                "selector": "#assistantNavBar #submit"
+            },
+            "name": "submit",
+            "designerId": "d2f7918c-fbcb-4174-9b5a-17296dee8154"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "assistantnavigation #commitApply",
+                "designer|targetType": "dailyOffice.applyManage.CommitApply",
+                "fn": "onCommitApplyDeactivate",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "if(me.getSubmit()){",
+                    "    me.getSubmit().destroy();",
+                    "}"
+                ],
+                "name": "deactivate"
+            },
+            "name": "onCommitApplyDeactivate",
+            "designerId": "85376ec0-bb8a-4537-a1d4-272755fc0b05"
+        }
+    ]
+}

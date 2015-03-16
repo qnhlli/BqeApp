@@ -1,0 +1,228 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pushdetailctr",
+        "designer|userClassName": "dailyOffice.AttendanceManageController",
+        "requires": [
+            "Ext.device.Geolocation"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "6de1ea52-7dbf-4d08-b8d0-fd9753c10036",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "obtainPositionBtn",
+                "selector": "pushcarddetail #obtainPositionBtn"
+            },
+            "name": "obtainPositionBtn",
+            "designerId": "4ad2bf23-56dc-4362-813b-db01043df4f6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "点击处理定位位置",
+                    ""
+                ],
+                "designer|controlQuery": "obtainPositionBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "obtainPosition",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "Ext.device.Geolocation.getCurrentPosition({",
+                    "    success: function(position) {",
+                    "        me.showPosition(position);",
+                    "    },",
+                    "    failure: function(error) {",
+                    "        alert('定位失败,请检查设置');",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "obtainPosition",
+            "designerId": "6c734e12-a54b-45a3-b91e-31b1aa6243e1"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "定位成功",
+                    ""
+                ],
+                "designer|params": [
+                    "position"
+                ],
+                "fn": "showPosition",
+                "implHandler": [
+                    "var me = this;",
+                    "var myGeo = new BMap.Geocoder();",
+                    "// 获取定位信息",
+                    "var LngLat = position.coords.longitude+','+position.coords.latitude;",
+                    "",
+                    "Ext.data.JsonP.request({",
+                    "    url: 'http://api.map.baidu.com/geoconv/v1/?',",
+                    "    callbackKey: 'callback',",
+                    "    params: {",
+                    "        coords: LngLat,",
+                    "        from: 1,",
+                    "        to: 5,",
+                    "        ak: 'xV1DRkUZPnUNZui4inZMUDnt'",
+                    "    },",
+                    "    success: function(result, request) {",
+                    "        if(result.status===0){",
+                    "            // 根据坐标得到地址描述",
+                    "            myGeo.getLocation(",
+                    "                //将转换后的经纬度传给百度，根据经纬度获取详细地址信息",
+                    "                new BMap.Point(result.result[0].x, result.result[0].y),",
+                    "                //请求返回的参数",
+                    "                function(result){",
+                    "                    if (result){",
+                    "                        me.getObtainPositionBtn().setText(result.address);",
+                    "                        me.uploadData(position,result.address,'in');",
+                    "                    }else{",
+                    "                        me.getObtainPositionBtn().setText('获取详细信息失败');",
+                    "                    }",
+                    "                });",
+                    "        }",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "showPosition",
+            "designerId": "37888427-4324-484f-83ac-95fec6dda5ef"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "上传数据到服务器",
+                    ""
+                ],
+                "designer|params": [
+                    "position,address,attendType"
+                ],
+                "fn": "uploadData",
+                "implHandler": [
+                    "console.log('上传考勤信息');",
+                    "var me = this;",
+                    "",
+                    "Ext.data.JsonP.request({",
+                    "    url: 'http://192.168.0.100/appserver/server.php/work/attendance/sign',",
+                    "    callbackKey: 'callback',",
+                    "    params: {",
+                    "        longitude : position.coords.longitude,\t\t//经度",
+                    "        latitude : position.coords.latitude,\t\t//纬度",
+                    "        accuracy : position.coords.accuracy,\t\t//位置精度",
+                    "        gpsTimestamp : me.msecFormat(position.timestamp),\t//时间",
+                    "        address : address,\t//地址",
+                    "        attendType : attendType\t//考勤类型（in:签到,out:签出）",
+                    "    },",
+                    "    success: function(result) {",
+                    "        if(result.result=='success'){",
+                    "            alert('成功');",
+                    "        }else{",
+                    "            alert('上传失败');",
+                    "        }",
+                    "",
+                    "    },",
+                    "    failure: function() {",
+                    "        alert('失败');",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "uploadData",
+            "designerId": "160a27f8-478a-47d1-8e41-805a8f149e09"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "将毫秒转换成时间格式"
+                ],
+                "designer|params": [
+                    "msec"
+                ],
+                "fn": "msecFormat",
+                "implHandler": [
+                    "var formatTime = new Date(msec);",
+                    "return formatTime;"
+                ]
+            },
+            "name": "msecFormat",
+            "designerId": "f9de2f15-f0f9-4109-91f7-cdfca6428955"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "考勤查询界面初始化",
+                    ""
+                ],
+                "designer|controlQuery": "attendancequerydetail",
+                "designer|targetType": "dailyOffice.attendance.query.AttendanceQueryDetail",
+                "fn": "onAttendanceQueryDetailInitialize",
+                "implHandler": [
+                    "console.log('考勤查询界面初始化');",
+                    "var attendanceQueryJsonPStore=Ext.getStore('attendanceQueryJsonPStore');",
+                    "",
+                    "attendanceQueryJsonPStore.load({",
+                    "    callback: function(records, operation, success) {",
+                    "        console.log(success);",
+                    "        console.log(operation);",
+                    "",
+                    "        component.setValues({",
+                    "            address:records[0].get('address'),",
+                    "            attendType:records[0].get('attendType'),",
+                    "            attendTime:records[0].get('attendTime')",
+                    "        });",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "name": "onAttendanceQueryDetailInitialize",
+            "designerId": "3b62f5f2-7390-4dd1-a96d-d91fcb53b3b3"
+        }
+    ]
+}

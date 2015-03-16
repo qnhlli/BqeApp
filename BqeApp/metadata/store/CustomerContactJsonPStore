@@ -1,0 +1,73 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerContactJsonPStore",
+        "model": "CustomerInfoModel",
+        "storeId": "CustomerContactJsonPStore"
+    },
+    "name": "MyJsonPStore",
+    "designerId": "ad0db4b2-24ee-42ff-b661-0cf025092055",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://192.168.0.100/appserver/server.php/employee/getCustomers"
+            },
+            "name": "MyJsonPProxy2",
+            "designerId": "a679527b-7b7d-42c5-9496-b91ca5d58142",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader2",
+                    "designerId": "150678be-e053-4551-ba83-2757046021e9"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGrouper",
+            "designerId": "fbfba0e9-c620-4d4f-ad34-60ef61a2ebca",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "groupFn",
+                        "implHandler": [
+                            "return item.get('customer_name')[0];"
+                        ]
+                    },
+                    "name": "groupFn",
+                    "designerId": "370a82c7-2557-4680-8264-04a37f7e03ee"
+                }
+            ]
+        }
+    ]
+}

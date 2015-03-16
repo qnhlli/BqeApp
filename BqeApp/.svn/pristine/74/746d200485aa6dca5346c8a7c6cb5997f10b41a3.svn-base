@@ -1,0 +1,109 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pushcarddetail",
+        "designer|userClassName": "dailyOffice.attendance.pushcard.PushCardDetail",
+        "id": "pushCardDetail"
+    },
+    "name": "MyContainer",
+    "designerId": "f6cde95f-889e-4894-8ef8-a40e9d076fc8",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "locate",
+                "itemId": "obtainPositionBtn",
+                "text": "定位中..."
+            },
+            "name": "MyButton",
+            "designerId": "93f79a05-9f10-45ba-b87e-f672ac90574c"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "photoContainer",
+                "layout": "hbox"
+            },
+            "name": "MyContainer",
+            "designerId": "0fed9220-3f81-43f3-a87c-87590fcbb77f",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "现场照片",
+                        "width": "25%"
+                    },
+                    "name": "MyLabel",
+                    "designerId": "9d03a64f-9913-4337-9b25-8eeff852961a"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "hbox",
+                        "width": "75%"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "e7681a18-3445-4169-998a-e7a99d903b43",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 65,
+                                "src": "resources/img/logo.png",
+                                "width": 65
+                            },
+                            "name": "MyImg",
+                            "designerId": "095ea30d-8760-4baa-adf5-2a4161af90f7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "signDescription",
+                "label": "签到说明",
+                "labelWidth": "31%",
+                "placeHolder": "在此输入签到说明"
+            },
+            "name": "MyTextArea1",
+            "designerId": "517228ab-e127-446c-9a76-074bfe3d77c1"
+        }
+    ]
+}

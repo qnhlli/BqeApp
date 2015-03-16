@@ -1,0 +1,163 @@
+{
+    "type": "Ext.Menu",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "slidemaincls"
+        ],
+        "designer|userAlias": "slidingmenu",
+        "designer|userClassName": "main.SlidingMenu"
+    },
+    "name": "MyMenu",
+    "designerId": "cf234d04-0d22-43dc-9c56-fab4100cffbd",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "slidecls"
+                ],
+                "height": null,
+                "itemId": "userInfo",
+                "width": null
+            },
+            "name": "MyContainer2",
+            "designerId": "c7b66fbf-f518-4618-afbb-e76298914661",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 64,
+                        "itemId": "userImg",
+                        "margin": null,
+                        "padding": null,
+                        "src": "resources/img/icon_about_us.svg",
+                        "width": ""
+                    },
+                    "name": "MyImg3",
+                    "designerId": "2d04b71c-5f30-4015-9a1e-973093801702"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "美食官",
+                        "itemId": "userName"
+                    },
+                    "name": "MyLabel3",
+                    "designerId": "5e851eaf-68c4-4b5c-9c7e-0ff4d2979a12"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "btnslide"
+                ],
+                "designer|uiInterfaceName": "plain",
+                "height": null,
+                "iconCls": "icon_account_number",
+                "itemId": "btnAccountSecurity",
+                "margin": 20,
+                "maxHeight": null,
+                "maxWidth": null,
+                "padding": null,
+                "text": "账号安全",
+                "ui": "plain",
+                "width": null
+            },
+            "name": "MyButton2",
+            "designerId": "459e3cbe-b307-4bac-a268-995d3ee3d373"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "btnslide"
+                ],
+                "designer|uiInterfaceName": "plain",
+                "height": null,
+                "iconCls": "icon_feedback",
+                "itemId": "btnFeedBack",
+                "margin": 20,
+                "text": "意见反馈",
+                "ui": "plain"
+            },
+            "name": "MyButton3",
+            "designerId": "ba030ddf-1528-48ee-93d4-6d474193d1f6"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "btnslide"
+                ],
+                "designer|uiInterfaceName": "plain",
+                "height": null,
+                "iconCls": "icon_about_us",
+                "itemId": "btnAboutUs",
+                "margin": 20,
+                "text": "关于我们",
+                "ui": "plain"
+            },
+            "name": "MyButton4",
+            "designerId": "ba18b77c-de63-48d3-bc1b-3983dd4f9f39"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "btnslide"
+                ],
+                "designer|uiInterfaceName": "plain",
+                "height": null,
+                "iconCls": "icon_drop_out",
+                "itemId": "btnDropOut",
+                "margin": 20,
+                "text": "退出登陆",
+                "ui": "plain"
+            },
+            "name": "MyButton5",
+            "designerId": "4e626ba5-6320-4a01-a90c-828a07f40564"
+        }
+    ]
+}

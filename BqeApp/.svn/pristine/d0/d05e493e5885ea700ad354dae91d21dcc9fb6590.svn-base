@@ -1,0 +1,32 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": null,
+        "designer|userAlias": null,
+        "designer|userClassName": "functionListStore.FastOperationStore",
+        "model": "FunctionListModel",
+        "storeId": "fastOperationStore"
+    },
+    "name": "MyStore",
+    "designerId": "d5583609-4a41-4d90-be5a-e76395b0e6c9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "fastOperationLocal"
+            },
+            "name": "MyLocalStorageProxy1",
+            "designerId": "1ae4009f-ca39-498a-a66e-9267f5cab2cd"
+        }
+    ]
+}

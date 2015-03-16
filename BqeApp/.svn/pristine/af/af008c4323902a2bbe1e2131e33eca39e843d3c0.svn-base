@@ -1,0 +1,16 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "LoginStore",
+        "model": "LoginModel",
+        "storeId": "LoginStore"
+    },
+    "name": "MyStore",
+    "designerId": "425786ba-d2f2-4d44-abcf-f3075accd338"
+}

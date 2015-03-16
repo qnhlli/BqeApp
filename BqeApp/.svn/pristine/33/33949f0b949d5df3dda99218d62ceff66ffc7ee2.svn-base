@@ -1,0 +1,67 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        functionId: 'announcement',",
+            "        xtype: 'announcementquery',",
+            "        iconPath: 'resources/img/icon_announcement.svg',",
+            "        title: '通知公告',",
+            "        moreIcon: false",
+            "    },",
+            "    {",
+            "        functionId: 'attendanceManage',",
+            "        xtype: 'attendancemanage',",
+            "        iconPath: 'resources/img/icon_attendant_manage.svg',",
+            "        title: '考勤管理',",
+            "        moreIcon: true",
+            "    },",
+            "    {",
+            "        functionId: 'addressBook',",
+            "        xtype: '',",
+            "        iconPath: 'resources/img/icon_address_book.svg',",
+            "        title: '通讯录',",
+            "        moreIcon: false",
+            "    },",
+            "    {",
+            "        functionId: 'applyManage',",
+            "        xtype: 'applymanagemain',",
+            "        iconPath: 'resources/img/icon_apply_manage.svg',",
+            "        title: '申请管理',",
+            "        moreIcon: true",
+            "        },",
+            "    {",
+            "        functionId: 'reportQuery',",
+            "        xtype: 'workreport',",
+            "        iconPath: 'resources/img/icon_query_report.svg',",
+            "        title: '上报查询',",
+            "        moreIcon: false",
+            "    },",
+            "    {",
+            "        functionId: 'workReport',",
+            "        xtype: 'workreport',",
+            "        iconPath: 'resources/img/icon_workreport.svg',",
+            "        title: '工作上报',",
+            "        moreIcon: false",
+            "    }",
+            "]"
+        ],
+        "designer|commentHeader": [
+            "日常办公列表数据"
+        ],
+        "designer|userClassName": "functionListStore.DailyOfficeStore",
+        "model": "FunctionListModel",
+        "storeId": "dailyOfficeStore"
+    },
+    "name": "MyStore",
+    "configAlternates": {
+        "result": "object"
+    },
+    "designerId": "d481f30b-7517-4cf8-ac26-e16c8a0f49fa"
+}

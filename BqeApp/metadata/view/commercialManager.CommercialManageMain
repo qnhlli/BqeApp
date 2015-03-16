@@ -1,0 +1,43 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "commercialmanagemain",
+        "designer|userClassName": "commercialManager.CommercialManageMain",
+        "disableSelection": true,
+        "height": null,
+        "id": "commercialManageMain",
+        "itemId": null,
+        "store": "commercialManagementStore"
+    },
+    "name": "MyList1",
+    "designerId": "0b226932-ea6c-48a7-9f4a-68e0aef8a39c",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<ul class=\"functionList\">",
+                    "    <li><img  src=\"{iconPath}\"/></li>",
+                    "    <li class=\"title\">{title}</li>",
+                    "    <tpl if=\"moreIcon\">",
+                    "        <li class=\"icon_more\"><img src=\"resources/img/iocn_more.svg\"/></li>",
+                    "    </tpl>",
+                    "</ul>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "57114eee-7a29-431f-9569-f00ab634c447"
+        }
+    ]
+}
